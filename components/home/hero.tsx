@@ -1,6 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import React from 'react';
+import { motion } from 'framer-motion';
+import { MessageSquare, Phone, Video, Shield, BarChart3, Bell, Building2 } from 'lucide-react';
 
 export function Hero() {
   return (
@@ -60,5 +63,8 @@ export function Hero() {
         </div>
       </div>
     </section>
+    
   );
 }
+
+
