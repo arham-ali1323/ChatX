@@ -21,10 +21,10 @@ export default function ChatInterface() {
   ];
 
   const capabilities = [
-    { icon: Shield, label: 'Moderation\n& Guardrails' },
-    { icon: BarChart3, label: 'Analytics\n& Insights' },
-    { icon: Bell, label: 'Notifications' },
-    { icon: Building2, label: 'Multi-Tenant\nInfra' }
+    { icon: Shield, label: 'Content\nModeration' },
+    { icon: BarChart3, label: 'Chat\nAnalytics' },
+    { icon: Bell, label: 'Smart\nNotifications' },
+    { icon: Building2, label: 'Team\nWorkspaces' }
   ];
 
   return (
@@ -65,10 +65,10 @@ export default function ChatInterface() {
             </h1>
 
             <p className="text-lg text-slate-300 leading-relaxed mb-8">
-              CometChat unifies user-to-user chat, voice and video calls, and user-facing AI agents in 
-              one platform — secure, compliant, and built to scale. With guardrails, insights, and 
-              notifications baked in, your teams ship faster and your users get the seamless experiences 
-              they expect.
+              ChatX unifies real-time messaging, voice and video calls, and AI-powered features in 
+              one platform — secure, scalable, and built for modern applications. With smart moderation, 
+              analytics, and notifications built-in, your teams ship faster and your users get the seamless 
+              experiences they expect.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -77,14 +77,14 @@ export default function ChatInterface() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Get Started Free
+                Start Chatting Free
               </motion.button>
               <motion.button
                 className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-xl border border-white/20 hover:bg-white/20 transition-all"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                View Documentation
+                View ChatX Docs
               </motion.button>
             </div>
           </motion.div>
@@ -131,9 +131,9 @@ export default function ChatInterface() {
                   <div className="w-10 h-10 bg-slate-700/50 rounded-lg flex items-center justify-center">
                     <Shield className="w-5 h-5 text-blue-400" />
                   </div>
-                  <p className="text-xs text-slate-400">Full Stack Agent Platform</p>
+                  <p className="text-xs text-slate-400">AI-Powered Chat Platform</p>
                 </div>
-                <p className="text-sm text-slate-300 font-medium mt-8">User-to-Agent Interactions</p>
+                <p className="text-sm text-slate-300 font-medium mt-8">AI-Enhanced Interactions</p>
               </motion.div>
             </div>
 
@@ -156,8 +156,8 @@ export default function ChatInterface() {
                 <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-4">
                   <MessageSquare className="w-8 h-8 text-slate-900" />
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-2">CometChat</h3>
-                <p className="text-sm text-slate-300">Shared Capabilities</p>
+                <h3 className="text-2xl font-bold text-white mb-2">ChatX</h3>
+                <p className="text-sm text-slate-300">Core Platform</p>
               </div>
             </motion.div>
 
@@ -271,10 +271,10 @@ export default function ChatInterface() {
           transition={{ duration: 0.8, delay: 0.8 }}
         >
           {[
-            { number: '10M+', label: 'Active Users' },
-            { number: '150+', label: 'Countries' },
-            { number: '99.99%', label: 'Uptime SLA' },
-            { number: '24/7', label: 'Support' }
+            { number: '50M+', label: 'Active Users' },
+            { number: '180+', label: 'Countries' },
+            { number: '99.999%', label: 'Message Delivery' },
+            { number: '24/7', label: 'Chat Support' }
           ].map((stat, i) => (
             <div key={i} className="text-center">
               <motion.h3

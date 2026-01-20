@@ -44,17 +44,17 @@ export default function TechnologiesShowcase() {
         <div className="text-center mb-16">
           <div className="inline-block mb-4">
             <span className="text-blue-400 text-sm font-semibold tracking-wider uppercase">
-              Technologies
+              ChatX Technologies
             </span>
           </div>
           
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            Built to fit your<br />
-            architecture
+            Built to integrate with<br />
+            your tech stack
           </h2>
           
           <button className="text-white text-sm font-medium px-6 py-2 border border-gray-700 rounded-full hover:border-blue-500 hover:bg-blue-500/10 transition-all duration-300">
-            See documentation
+            View ChatX Docs
           </button>
         </div>
 
@@ -132,7 +132,7 @@ export default function TechnologiesShowcase() {
                 
                 {/* Center Icon */}
                 <div className="relative bg-white text-gray-900 w-16 h-16 rounded-xl flex items-center justify-center text-3xl font-bold shadow-lg">
-                  C
+                  X
                 </div>
               </div>
             </div>

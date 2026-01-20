@@ -33,16 +33,16 @@ export function Hero() {
   bg-clip-text text-transparent
   drop-shadow-[0_0_20px_rgba(216,210,244,0.35)]"
         >
-          The complete communication platform for modern Chat applications
+          The complete chat platform for modern applications
         </h1>
 
         <p
           className="mt-6 mx-auto max-w-xl text-lg 
   text-[#A9A4C5]"
         >
-          Embed powerful communication features directly into your platform.
+          Embed powerful chat features directly into your platform.
           Real-time messaging, voice/video calls, and intelligent AI assistants
-          to enhance user engagement.
+          to transform user engagement.
         </p>
 
         {/* Buttons */}
@@ -51,14 +51,14 @@ export function Hero() {
             className="rounded-md bg-blue-500 px-4 py-2 text-sm font-medium text-white transition hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200"
             href={"/pricing"}
           >
-            Start Free Trial
+            Start ChatX Free
           </Link>
 
           <Link
             className="rounded-md bg-transparent border border-gray-500 px-4 py-2 text-sm font-medium text-white transition hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200"
             href={"/demo"}
           >
-            Check the Demo
+            Try ChatX Demo
           </Link>
         </div>
       </div>

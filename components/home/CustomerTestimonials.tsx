@@ -6,61 +6,61 @@ import { Quote, ArrowRight } from 'lucide-react';
 const testimonials = [
   {
     id: 1,
-    company: 'IKEA CONSULTING',
-    logo: 'https://logo.clearbit.com/ikea.com',
-    quote: 'We evaluated several vendors. CometChat kicked all the boxes regarding technical fineness and architectural host model aligned with our needs.',
-    author: 'Claudio Engler',
-    role: 'Head Of Application Development',
+    company: 'TECHSTART',
+    logo: 'https://logo.clearbit.com/techstart.com',
+    quote: 'ChatX transformed how we communicate with customers. The real-time messaging and AI features helped us increase engagement by 300%.',
+    author: 'Sarah Chen',
+    role: 'CEO & Founder',
     avatar: 'https://i.pravatar.cc/150?img=33',
     color: 'from-blue-500/20 to-cyan-500/20'
   },
   {
     id: 2,
-    company: 'Kahoot!',
-    logo: 'https://logo.clearbit.com/kahoot.com',
-    quote: 'CometChat transformed our in-app communication. Their responsive support and tailored solutions made the integration—we\'d highly recommend them!',
-    author: 'Ingrid Pauchon',
-    role: 'Product Manager',
+    company: 'EduConnect',
+    logo: 'https://logo.clearbit.com/educonnect.com',
+    quote: 'The video calling feature in ChatX is exceptional. Our virtual classrooms have never been more interactive and reliable.',
+    author: 'Michael Rodriguez',
+    role: 'Head of Technology',
     avatar: 'https://i.pravatar.cc/150?img=5',
     color: 'from-purple-500/20 to-pink-500/20'
   },
   {
     id: 3,
-    company: 'turbotenant',
-    logo: 'https://logo.clearbit.com/turbotenant.com',
-    quote: 'We needed to upgrade our in-app messaging stack efficiently. CometChat offered the features we needed out of the box, making integration the best choice.',
-    author: 'Sara Capra',
-    role: 'Senior Product Manager',
+    company: 'HealthPlus',
+    logo: 'https://logo.clearbit.com/healthplus.com',
+    quote: 'ChatX\'s secure messaging platform is perfect for healthcare. The end-to-end encryption and compliance features give us peace of mind.',
+    author: 'Dr. Emily Watson',
+    role: 'Medical Director',
     avatar: 'https://i.pravatar.cc/150?img=9',
     color: 'from-orange-500/20 to-red-500/20'
   },
   {
     id: 4,
-    company: 'man+mathers',
-    logo: 'https://logo.clearbit.com/manmathers.com',
-    quote: 'We moved from phone consultations to a scalable, WhatsApp-like chat system that let us handle multiple consultations simultaneously. This was only possible with CometChat.',
-    author: 'Himanshu Khurana',
-    role: 'Senior Product Manager',
+    company: 'GameHub',
+    logo: 'https://logo.clearbit.com/gamehub.com',
+    quote: 'Our gaming community loves ChatX. The real-time chat and voice features have created an amazing social experience for our players.',
+    author: 'Alex Kim',
+    role: 'Community Manager',
     avatar: 'https://i.pravatar.cc/150?img=12',
     color: 'from-green-500/20 to-emerald-500/20'
   },
   {
     id: 5,
-    company: 'NORBROKER',
-    logo: 'https://logo.clearbit.com/norbroker.com',
-    quote: 'With CometChat, in-app chat adoption is seamless, increasing dwell time, and boosting successful transactions by nearly 25%.',
-    author: 'Amit Sharma',
-    role: 'SVP, Engineering',
+    company: 'FinanceFlow',
+    logo: 'https://logo.clearbit.com/financeflow.com',
+    quote: 'ChatX streamlined our client communications. The multi-workspace feature keeps everything organized and secure.',
+    author: 'Jennifer Liu',
+    role: 'Operations Lead',
     avatar: 'https://i.pravatar.cc/150?img=14',
     color: 'from-indigo-500/20 to-blue-500/20'
   },
   {
     id: 6,
-    company: 'Bitdefender',
-    logo: 'https://logo.clearbit.com/bitdefender.com',
-    quote: 'Discovering CometChat was a game-changer for launching our AI bot, Scamio. They simplified the chat integration, allowing us to go live much faster than building from scratch.',
-    author: 'Mirela Padina',
-    role: 'Product Manager',
+    company: 'RetailMax',
+    logo: 'https://logo.clearbit.com/retailmax.com',
+    quote: 'Customer support has never been better. ChatX\'s smart notifications and analytics help us respond 50% faster.',
+    author: 'David Park',
+    role: 'Customer Experience Director',
     avatar: 'https://i.pravatar.cc/150?img=16',
     color: 'from-rose-500/20 to-pink-500/20'
   }
@@ -85,15 +85,13 @@ export default function TestimonialsSection() {
           transition={{ duration: 0.6 }}
         >
           <span className="inline-block px-4 py-1.5 bg-purple-500/10 border border-purple-500/20 rounded-full text-purple-400 text-sm font-medium mb-6">
-            Customer Stories
+            ChatX Success Stories
           </span>
           
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
-            Trusted by developers and
+            Trusted by innovators and
             <br />
-            product leaders at startups and
-            <br />
-            enterprises alike
+            industry leaders worldwide
           </h2>
         </motion.div>
 
@@ -186,7 +184,7 @@ export default function TestimonialsSection() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Read more
+            View more stories
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </motion.button>
         </motion.div>

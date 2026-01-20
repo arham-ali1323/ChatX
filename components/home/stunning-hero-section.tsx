@@ -15,7 +15,7 @@ export default function StunningHeroSection() {
             background: 'radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, rgba(99, 102, 241, 0) 70%)',
           }}
           animate={{
-            scale: [1, 1.2, 1],
+            scale: [1, 1.2, 1], 
             opacity: [0.3, 0.5, 0.3],
           }}
           transition={{
@@ -81,13 +81,13 @@ export default function StunningHeroSection() {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <h5 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">
-            Chat that ships.
+            ChatX: Conversations
             <br />
             <span className="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-              Agents that scale.
+              Reimagined.
             </span>
             <br />
-            No glue code required.
+            Experience the future.
           </h5>
         </motion.div>
 
@@ -98,7 +98,7 @@ export default function StunningHeroSection() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-slate-300 text-lg md:text-xl max-w-3xl mx-auto mb-12 leading-relaxed"
         >
-          CometChat handles the messy middle - UI, safety, infra, notifications - so you can build with clarity, confidence, and joy.
+          ChatX handles the complexity - real-time messaging, file sharing, video calls, and team collaboration - so you can focus on what matters: meaningful connections.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -115,7 +115,7 @@ export default function StunningHeroSection() {
             className="group relative px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-semibold rounded-xl shadow-2xl shadow-indigo-500/50 transition-all overflow-hidden"
           >
             <span className="relative z-10 flex items-center gap-2">
-              Get Started for Free
+              Start Chatting Free
               <Sparkles className="w-5 h-5 group-hover:rotate-12 transition-transform" />
             </span>
             
@@ -133,7 +133,7 @@ export default function StunningHeroSection() {
             className="group px-8 py-4 bg-slate-800/50 hover:bg-slate-700/50 border border-slate-700 hover:border-slate-600 text-white font-semibold rounded-xl backdrop-blur-sm transition-all"
           >
             <span className="flex items-center gap-2">
-              Talk to Us
+              Request Demo
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </span>
           </motion.button>
@@ -148,17 +148,17 @@ export default function StunningHeroSection() {
         >
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-            <span className="text-sm">Used by 10,000+ developers</span>
+            <span className="text-sm">Powered by 50,000+ users</span>
           </div>
           <div className="w-px h-4 bg-slate-700" />
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-indigo-500 rounded-full" />
-            <span className="text-sm">99.9% uptime guaranteed</span>
+            <span className="text-sm">Lightning-fast delivery</span>
           </div>
           <div className="w-px h-4 bg-slate-700" />
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-purple-500 rounded-full" />
-            <span className="text-sm">SOC 2 Compliant</span>
+            <span className="text-sm">End-to-end encrypted</span>
           </div>
         </motion.div>
 
@@ -189,26 +189,6 @@ export default function StunningHeroSection() {
           }}
         />
       </div>
-
-      {/* Scroll Indicator */}
-      <motion.div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.2 }}
-      >
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 2, repeat: Infinity }}
-          className="w-6 h-10 border-2 border-slate-600 rounded-full flex justify-center p-2"
-        >
-          <motion.div
-            animate={{ y: [0, 12, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="w-1.5 h-1.5 bg-indigo-500 rounded-full"
-          />
-        </motion.div>
-      </motion.div>
     </section>
   );
 }

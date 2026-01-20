@@ -7,64 +7,64 @@ export default function TrustSecurity() {
   const features = [
     {
       id: 'multi-tenant',
-      title: 'Seamless Multi-tenant support',
-      description: 'Isolate data and configurations per tenant with zero code duplication.',
+      title: 'Multi-Workspace Architecture',
+      description: 'Isolate teams and projects with dedicated workspaces. Zero code duplication required.',
       visual: 'diagram',
       span: 'row-span-2'
     },
     {
       id: 'encryption',
-      title: 'Data encryption in transit and at rest',
-      description: 'End-to-end encryption with industry-standard protocols.',
+      title: 'Advanced Encryption',
+      description: 'Military-grade end-to-end encryption for all communications.',
       visual: 'lock',
       span: 'row-span-2'
     },
     {
       id: 'global',
-      title: 'Global multi-region delivery',
-      description: 'Deploy across multiple regions for redundancy and performance.',
+      title: 'Global Chat Network',
+      description: 'Deploy across 50+ regions worldwide for instant message delivery.',
       visual: 'map',
       span: 'row-span-1'
     },
     {
       id: 'uptime',
       title: '99.999%',
-      subtitle: 'Uptime SLA',
+      subtitle: 'Message Delivery',
       visual: 'stat',
       span: 'row-span-1',
       large: true
     },
     {
       id: 'edge',
-      title: 'Edge network',
-      description: 'Lightning-fast chat delivery through 35+ edge locations worldwide, ensuring minimal latency for all users.',
+      title: 'Real-time Edge Delivery',
+      description: 'Lightning-fast chat through 100+ edge locations globally, ensuring sub-50ms latency.',
       visual: 'network',
       span: 'row-span-2'
     },
     {
       id: 'compliance',
-      title: 'Compliance Certifications',
+      title: 'Security Standards',
       visual: 'badges',
       span: 'row-span-1'
     },
     {
       id: 'auditing',
-      title: 'Manage auditing and policy enforcement',
-      description: 'Complete visibility and control over security policies.',
+      title: 'Advanced Security Controls',
+      description: 'Complete visibility and control over chat security policies.',
       visual: 'shield',
       span: 'row-span-1'
     },
     {
       id: 'rbac',
-      title: 'RBAC & Access logs',
-      description: 'Role-based access control with comprehensive audit trails.',
+      title: 'Access Management',
+      description: 'Role-based permissions with comprehensive audit trails.',
       visual: 'lock-shield',
       span: 'row-span-1'
     },
     {
       id: 'users',
-      title: '5B+ users',
-      subtitle: 'Scalable systems',
+      title: '100M+',
+      subtitle: 'Active Users',
       visual: 'stat',
       span: 'row-span-1',
       large: true
@@ -84,17 +84,17 @@ export default function TrustSecurity() {
         <div className="text-center mb-16">
           <div className="inline-block mb-4">
             <span className="text-purple-400 text-sm font-semibold tracking-wider uppercase">
-              Trust & Security
+              ChatX Security & Trust
             </span>
           </div>
           
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            Infra you can count on.<br />
-            Security you can sleep on.
+            Infrastructure you can trust.<br />
+            Security you can rely on.
           </h2>
           
           <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-            Trusted by industries where things can't break. We've spent years building scalable, compliant systems so you don't have to.
+            Trusted by leading companies worldwide. We've built the most secure and scalable chat platform so you can focus on your users.
           </p>
         </div>
 

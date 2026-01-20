@@ -13,8 +13,8 @@ export default function FeaturesShowcase() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
         </svg>
       ),
-      title: "Moderation & Guardrails",
-      description: "AI-native, context-aware safety for both user content and agent responses - built-in, not bolted on. Includes visual rule engine, fallback handling, and multilingual/media support.",
+      title: "Smart Content Filtering",
+      description: "AI-powered content moderation that understands context, tone, and intent. Automatically filters inappropriate content while preserving meaningful conversations.",
       span: "col-span-1"
     },
     {
@@ -24,8 +24,8 @@ export default function FeaturesShowcase() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
         </svg>
       ),
-      title: "Analytics & Insights",
-      description: "Track everything from conversation health to agent success. Out-of-the-box dashboards help you improve UX, tune logic, and measure ROI - without extra tooling.",
+      title: "Chat Analytics",
+      description: "Deep insights into conversation patterns, user engagement, and team productivity. Real-time dashboards help you optimize communication workflows.",
       span: "col-span-1"
     }
   ];
@@ -38,8 +38,8 @@ export default function FeaturesShowcase() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
         </svg>
       ),
-      title: "Notification Engine",
-      description: "Push, Email, and SMS alerts that respect user preferences and timing logic - includes retries, quiet hours, frequency controls, and custom templates.",
+      title: "Smart Notifications",
+      description: "Intelligent alerts that know when to notify and when to wait. Customizable delivery channels, quiet hours, and priority-based routing.",
       span: "col-span-1"
     },
     {
@@ -49,8 +49,8 @@ export default function FeaturesShowcase() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
         </svg>
       ),
-      title: "Developer Tooling",
-      description: "UI Kits, SDKs, APIs, webhooks, and visual builders to match any team's workflow - whether you're building MVPs or managing multiple teams at scale.",
+      title: "Developer APIs",
+      description: "Comprehensive SDKs, webhooks, and REST APIs for seamless integration. Build custom chat experiences with our flexible developer tools.",
       span: "col-span-1"
     },
     {
@@ -60,8 +60,8 @@ export default function FeaturesShowcase() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
         </svg>
       ),
-      title: "Multi-Tenant Infrastructure",
-      description: "Run multiple brands, communities, or customer sets on the same backend. Isolate logic, moderation, and branding per tenant with zero code duplication.",
+      title: "Multi-Workspace Support",
+      description: "Manage multiple teams, projects, or organizations from a single platform. Isolated environments with customizable permissions and branding.",
       span: "col-span-1"
     }
   ];
@@ -79,17 +79,17 @@ export default function FeaturesShowcase() {
         <div className="text-center mb-16">
           <div className="inline-block mb-4">
             <span className="text-purple-400 text-sm font-semibold tracking-wider uppercase px-4 py-2 bg-purple-500/10 border border-purple-500/20 rounded-full">
-              Shared Services
+              ChatX Core Features
             </span>
           </div>
           
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight">
-            Not just plumbing.<br />
-            Smart plumbing.
+            Not just messaging.<br />
+            Intelligent messaging.
           </h2>
           
           <p className="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">
-            All core products come wired into a common set of powerful systems that bring safety, insights, and engagement to every interaction.
+            Every ChatX feature is powered by advanced AI and real-time technology, delivering seamless communication experiences that adapt to your needs.
           </p>
         </div>
 
@@ -209,7 +209,7 @@ export default function FeaturesShowcase() {
         {/* Bottom CTA */}
         <div className="text-center mt-16">
           <button className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-purple-500/30">
-            Explore All Features
+            Discover ChatX Features
           </button>
         </div>
       </div>

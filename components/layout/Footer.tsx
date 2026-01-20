@@ -1,64 +1,62 @@
-export default function CometChatFooter() {
+export default function ChatXFooter() {
   const footerLinks = {
     products: {
       title: "Products",
       links: [
-        "Chat & Messaging",
-        "Voice and Video Calls",
-        "Full Stack AI Agent Platform"
+        "Real-time Chat",
+        "Voice & Video Calls",
+        "AI Chat Platform"
       ]
     },
     platformFeatures: {
       title: "Platform Features",
       links: [
-        "Webhooks & Guardrails",
-        "Notifications",
-        "Analytics & Insights",
-        "Multi-Tenant Chat",
-        "Integration Methods",
+        "Content Moderation",
+        "Smart Notifications",
+        "Chat Analytics",
+        "Team Workspaces",
+        "API Integration",
         "Widget Builder",
         "UI Kit Builder",
-        "UI Kits",
-        "SDKs"
+        "UI Components",
+        "Developer SDKs"
       ]
     },
     solutions: {
       title: "Solutions",
       links: [
-        "By use cases",
-        "On-demand",
-        "Social Businesses",
-        "Healthcare & Telehealth",
-        "Community & Social",
-        "Dating",
-        "Competition",
-        "CometChat vs SendBird",
-        "CometChat vs Stream",
-        "SendBird Alternatives",
-        "Stream Chat Alternatives",
-        "Compare Top Chat SDKs"
+        "Use Cases",
+        "Live Chat",
+        "Team Collaboration",
+        "Healthcare Chat",
+        "Community Platforms",
+        "Dating Apps",
+        "ChatX vs Competitors",
+        "Alternative to SendBird",
+        "Alternative to Stream",
+        "Compare Chat SDKs"
       ]
     },
     developers: {
       title: "Developers",
       links: [
-        "Docs",
+        "Documentation",
         "Sample Apps",
-        "APIs",
+        "API Reference",
         "Product Updates",
         "Feature Requests",
         "System Status",
-        "Office Hours"
+        "Developer Support"
       ]
     },
     build: {
       title: "Build",
       links: [
-        "React Chat",
+        "React Chat SDK",
         "React Native Chat",
-        "Flutter chat",
-        "Next JS Chat",
-        "Expo chat"
+        "Flutter Chat SDK",
+        "Next.js Chat",
+        "Expo Chat"
       ]
     },
     resources: {
@@ -66,13 +64,13 @@ export default function CometChatFooter() {
       links: [
         "Blog",
         "Tutorials",
-        "Templates",
-        "Chat UI kits",
-        "React Chat UI Kit",
-        "Flutter Chat UI Kit",
-        "Android Chat UI Kit",
-        "React Native Chat UI Kit",
-        "iOS Chat UI Kit"
+        "Chat Templates",
+        "Chat UI Kits",
+        "React Chat UI",
+        "Flutter Chat UI",
+        "Android Chat UI",
+        "React Native Chat UI",
+        "iOS Chat UI"
       ]
     },
     company: {
@@ -81,14 +79,14 @@ export default function CometChatFooter() {
         "Careers",
         "Partners",
         "Pricing",
-        "Implementation Services",
-        "Chat with us",
-        "Terms and Legal",
+        "Implementation",
+        "Contact Sales",
+        "Legal",
         "Terms of Service",
         "Privacy Policy",
-        "Sub-processors List",
-        "Data Processing Addendum",
-        "Vulnerability Disclosure Program"
+        "Security",
+        "Data Processing",
+        "Bug Bounty"
       ]
     }
   };
@@ -98,7 +96,7 @@ export default function CometChatFooter() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Logo */}
         <div className="mb-12">
-          <h2 className="text-2xl font-bold tracking-tight">cometchat</h2>
+          <h2 className="text-2xl font-bold tracking-tight">ChatX</h2>
         </div>
 
         {/* Footer Links Grid */}
@@ -206,7 +204,7 @@ export default function CometChatFooter() {
         <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Copyright */}
           <div className="text-gray-400 text-sm">
-            2025 © CometChat
+            2025 © ChatX
           </div>
 
           {/* Social Links */}

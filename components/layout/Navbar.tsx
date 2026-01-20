@@ -35,19 +35,13 @@ export default function Navbar() {
           {/* Logo */}
           <div className="text-blue-500 font-extrabold text-xl tracking-wide">
             <Link href="/">
-              {/* <Image
-                src="/images/1.png"
-                alt="ChatX-logo"
-                width={100}
-                height={100}
-                className="h-16 w-auto md:h-24 lg:h-40 transition-all duration-300"
-              /> */}
+              <Image src="/images/logo.png" alt="Chat-Logo" width={80} height={60}/>
             </Link>
           </div>
 
           {/* Desktop Nav */}
           <nav className="hidden lg:flex gap-10 text-sm text-gray-300 font-bold uppercase">
-            {["Products", "Capabilities", "Developers", "Resources","Pricing", "Customers"].map((item) => (
+            {["Products", "Features", "Developers", "Resources", "Pricing", "Customers"].map((item) => (
               <Link
                 key={item}
                 href={item.toLowerCase()}
@@ -64,7 +58,7 @@ export default function Navbar() {
               Log in
             </Link>
             <Link href="/login" className="hidden lg:block bg-blue-500 px-6 py-3 text-sm font-bold text-white uppercase hover:bg-blue-400 transition">
-              Schedule a demo
+              Schedule Demo
             </Link>
 
             {/* Mobile Toggle */}
@@ -84,7 +78,7 @@ export default function Navbar() {
           }`}
         >
           <nav className="flex flex-col items-center gap-6 py-8 text-sm font-semibold uppercase">
-            {["Products", "Capabilities", "Developers", "Resources","Pricing", "Customers"].map((item) => (
+            {["Products", "Features", "Developers", "Resources", "Pricing", "Customers"].map((item) => (
               <Link
                 key={item}
                 href={item.toLowerCase()}
@@ -149,7 +143,7 @@ export default function Navbar() {
             </div>
 
             <button className="mt-4 bg-blue-500 px-8 py-3 text-white text-sm font-bold uppercase">
-              Join Us Today
+              Start with ChatX
             </button>
           </nav>
         </div>
