@@ -5,12 +5,14 @@ import TechnologiesArchitecture from '@/components/home/technologies-architectur
 import TrustSecurity from '@/components/home/TrustSecurity';
 import CustomerTestimonials from '@/components/home/CustomerTestimonials';
 import StunningHeroSection from '@/components/home/stunning-hero-section';
+import CoreProduct from '@/components/home/Core-Product';
 
 const page = () => {  
   return (
     <div className="bg-black min-h-screen">
       <Hero />
       <ChatInterface />
+      <CoreProduct />
       <FeaturesShowcase />
       <TechnologiesArchitecture />
       <TrustSecurity />

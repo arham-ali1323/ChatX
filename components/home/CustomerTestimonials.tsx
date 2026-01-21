@@ -96,7 +96,7 @@ export default function TestimonialsSection() {
         </motion.div>
 
         {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={testimonial.id}
@@ -112,6 +112,8 @@ export default function TestimonialsSection() {
                 backdrop-blur-sm border border-slate-800/50
                 rounded-2xl p-6 transition-all duration-300
                 hover:border-slate-700/50 hover:shadow-2xl
+                shadow-[0_20px_25px_-5px_rgba(0,0,0,0.3),0_8px_10px_-6px_rgba(0,0,0,0.2)]
+                hover:shadow-[0_25px_50px_-12px_rgba(0,0,0,0.5),0_12px_20px_-8px_rgba(0,0,0,0.3)]
               `}>
                 {/* Quote Icon */}
                 <div className="absolute top-6 right-6 opacity-20">

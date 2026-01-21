@@ -8,7 +8,7 @@ import { MessageSquare, Phone, Video, Shield, BarChart3, Bell, Building2 } from 
 export function Hero() {
   return (
     <section
-      className="relative mx-auto px-4 py-20 text-center overflow-hidden
+      className="relative mx-auto px-4 py-32 text-center overflow-hidden
   bg-[#070B1A]"
     >
       {/* Blue main glow */}
@@ -37,7 +37,7 @@ export function Hero() {
         </h1>
 
         <p
-          className="mt-6 mx-auto max-w-xl text-lg 
+          className="mt-12 mx-auto max-w-xl text-lg 
   text-[#A9A4C5]"
         >
           Embed powerful chat features directly into your platform.
@@ -45,17 +45,28 @@ export function Hero() {
           to transform user engagement.
         </p>
 
+        <p
+          className="mt-6 mx-auto max-w-2xl text-base 
+  text-[#8B85B3]"
+        >
+          Built for developers who value simplicity and scalability. 
+          Our comprehensive SDK and pre-built UI components let you launch 
+          in days, not months. Join thousands of companies already using 
+          ChatX to connect millions of users worldwide.
+        </p>
+
+
         {/* Buttons */}
-        <div className="mt-10 flex flex-wrap justify-center gap-4">
+        <div className="mt-16 flex flex-wrap justify-center gap-4">
           <Link
-            className="rounded-md bg-blue-500 px-4 py-2 text-sm font-medium text-white transition hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200"
+            className="btn-7 rounded-md bg-blue-500 px-8 py-4 text-sm font-medium text-white transition hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200"
             href={"/pricing"}
           >
             Start ChatX Free
           </Link>
 
           <Link
-            className="rounded-md bg-transparent border border-gray-500 px-4 py-2 text-sm font-medium text-white transition hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200"
+            className="rounded-md bg-transparent border border-gray-500 px-8 py-4 text-sm font-medium text-white transition hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200"
             href={"/demo"}
           >
             Try ChatX Demo
@@ -66,5 +77,3 @@ export function Hero() {
     
   );
 }
-
-

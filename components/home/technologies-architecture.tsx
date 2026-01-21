@@ -123,13 +123,6 @@ export default function TechnologiesShowcase() {
           <div className="relative mx-8" style={{ zIndex: 2 }}>
             <div className="w-32 h-32 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 flex items-center justify-center shadow-2xl">
               <div className="relative">
-                {/* Dots Pattern */}
-                <div className="absolute inset-0 grid grid-cols-3 gap-1 opacity-30">
-                  {[...Array(9)].map((_, i) => (
-                    <div key={i} className="w-1 h-1 bg-gray-600 rounded-full"></div>
-                  ))}
-                </div>
-                
                 {/* Center Icon */}
                 <div className="relative bg-white text-gray-900 w-16 h-16 rounded-xl flex items-center justify-center text-3xl font-bold shadow-lg">
                   X
