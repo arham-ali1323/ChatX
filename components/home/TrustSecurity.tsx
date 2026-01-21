@@ -72,7 +72,7 @@ export default function TrustSecurity() {
   ];
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-b from-gray-950 via-indigo-950/20 to-gray-950 py-20 overflow-hidden">
+    <section className="relative min-h-screen bg-linear-to-b from-gray-950 via-indigo-950/20 to-gray-950 py-20 overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-purple-600 opacity-10 blur-3xl rounded-full"></div>
@@ -192,7 +192,7 @@ function FeatureCard({ feature, isHovered, onHover, onLeave }: {
                   {[...Array(5)].map((_, i) => (
                     <div
                       key={i}
-                      className="absolute w-32 h-px bg-gradient-to-r from-purple-500/0 via-purple-500/50 to-purple-500/0"
+                      className="absolute w-32 h-px bg-linear-to-r from-purple-500/0 via-purple-500/50 to-purple-500/0"
                       style={{
                         transform: `rotate(${i * 36}deg)`,
                         transformOrigin: 'center'
@@ -202,17 +202,11 @@ function FeatureCard({ feature, isHovered, onHover, onLeave }: {
                   {/* Center node */}
                   <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-purple-500 rounded-full"></div>
                   {/* Edge nodes */}
-                  {[...Array(5)].map((_, i) => (
-                    <div
-                      key={i}
-                      className="absolute w-3 h-3 bg-purple-400 rounded-full"
-                      style={{
-                        top: `${50 + 40 * Math.sin((i * 72 * Math.PI) / 180)}%`,
-                        left: `${50 + 40 * Math.cos((i * 72 * Math.PI) / 180)}%`,
-                        transform: 'translate(-50%, -50%)'
-                      }}
-                    ></div>
-                  ))}
+                  <div className="absolute w-3 h-3 bg-purple-400 rounded-full" style={{ top: '10%', left: '50%', transform: 'translate(-50%, -50%)' }}></div>
+                  <div className="absolute w-3 h-3 bg-purple-400 rounded-full" style={{ top: '31%', left: '81%', transform: 'translate(-50%, -50%)' }}></div>
+                  <div className="absolute w-3 h-3 bg-purple-400 rounded-full" style={{ top: '69%', left: '81%', transform: 'translate(-50%, -50%)' }}></div>
+                  <div className="absolute w-3 h-3 bg-purple-400 rounded-full" style={{ top: '90%', left: '50%', transform: 'translate(-50%, -50%)' }}></div>
+                  <div className="absolute w-3 h-3 bg-purple-400 rounded-full" style={{ top: '69%', left: '19%', transform: 'translate(-50%, -50%)' }}></div>
                 </div>
               </div>
             </div>
@@ -260,7 +254,7 @@ function FeatureCard({ feature, isHovered, onHover, onLeave }: {
     <div
       onMouseEnter={onHover}
       onMouseLeave={onLeave}
-      className={`group relative bg-gradient-to-br from-gray-900/50 to-gray-950/50 backdrop-blur-sm border rounded-xl p-6 transition-all duration-300 ${
+      className={`group relative bg-linear-to-br from-gray-900/50 to-gray-950/50 backdrop-blur-sm border rounded-xl p-6 transition-all duration-300 ${
         feature.span || ''
       } ${
         isHovered 
@@ -293,7 +287,7 @@ function FeatureCard({ feature, isHovered, onHover, onLeave }: {
       </div>
 
       {/* Hover Glow */}
-      <div className={`absolute inset-0 rounded-xl bg-gradient-to-br from-purple-500/0 to-blue-500/0 transition-all duration-300 pointer-events-none ${
+      <div className={`absolute inset-0 rounded-xl bg-linear-to-br from-purple-500/0 to-blue-500/0 transition-all duration-300 pointer-events-none ${
         isHovered ? 'from-purple-500/5 to-blue-500/5' : ''
       }`}></div>
     </div>

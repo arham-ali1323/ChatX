@@ -35,7 +35,13 @@ export default function Navbar() {
           {/* Logo */}
           <div className="text-blue-500 font-extrabold text-xl tracking-wide">
             <Link href="/">
-              <Image src="/images/logo.png" alt="Chat-Logo" width={80} height={60}/>
+              <Image 
+  src="/images/logo.png" 
+  alt="Chat-Logo" 
+  width={60} 
+  height={60}
+  style={{ width: 'auto', height: 'auto' }}
+/>
             </Link>
           </div>
 

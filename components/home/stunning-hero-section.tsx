@@ -174,6 +174,10 @@ export default function StunningHeroSection() {
             repeat: Infinity,
             ease: "easeInOut"
           }}
+          style={{
+            top: '25%',
+            right: '25%'
+          }}
         />
         <motion.div
           className="absolute bottom-1/4 left-1/4 w-2 h-2 bg-purple-500 rounded-full blur-sm"
@@ -186,6 +190,10 @@ export default function StunningHeroSection() {
             repeat: Infinity,
             ease: "easeInOut",
             delay: 1
+          }}
+          style={{
+            bottom: '25%',
+            left: '25%'
           }}
         />
       </div>
