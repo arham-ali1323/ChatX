@@ -84,7 +84,7 @@ export default function CometChatTimeline() {
             <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               {/* Left Content */}
               <div className="space-y-6">
-                <span className="text-purple-400 text-sm font-semibold tracking-wider uppercase">
+                <span className="text-primary text-sm font-semibold tracking-wider uppercase">
                   {section.badge}
                 </span>
                 
@@ -93,7 +93,7 @@ export default function CometChatTimeline() {
                 </h2>
                 
                 {section.subtitle && (
-                  <h3 className="text-2xl md:text-3xl font-bold text-purple-400">
+                  <h3 className="text-2xl md:text-3xl font-bold text-primary">
                     {section.subtitle}
                   </h3>
                 )}
@@ -110,16 +110,16 @@ export default function CometChatTimeline() {
                 
                 {section.keyFeatures && (
                   <div className="space-y-4 pt-4">
-                    <h4 className="text-purple-400 font-semibold">Key features:</h4>
+                    <h4 className="text-primary font-semibold">Key features:</h4>
                     <ul className="space-y-3">
                       {section.keyFeatures.map((feature, idx) => (
                         <li key={idx} className="flex items-start gap-3 text-gray-300">
-                          <span className="text-purple-500 text-xl">+</span>
+                          <span className="text-primary text-xl">+</span>
                           <span>{feature}</span>
                         </li>
                       ))}
                     </ul>
-                    <button className="text-purple-400 hover:text-purple-300 font-semibold mt-4 transition">
+                    <button className="text-primary hover:text-primary/80 font-semibold mt-4 transition">
                       Learn more →
                     </button>
                   </div>
@@ -233,7 +233,7 @@ function AIAgentVisual() {
       {/* Agent Chat Interface 1 */}
       <div className="bg-gradient-to-br from-gray-900/80 to-gray-950/80 border border-gray-800 rounded-2xl p-6">
         <div className="flex items-center gap-3 mb-4">
-          <div className="w-8 h-8 bg-purple-500 rounded-full"></div>
+          <div className="w-8 h-8 bg-primary rounded-full"></div>
           <span className="text-white font-semibold">AI Agent</span>
           <div className="ml-auto flex gap-2">
             <button className="w-8 h-8 bg-gray-800 rounded-lg">+</button>
@@ -242,7 +242,7 @@ function AIAgentVisual() {
         </div>
         
         <div className="bg-gray-800/50 rounded-xl p-6 mb-4">
-          <div className="w-16 h-16 bg-purple-500 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl">
+          <div className="w-16 h-16 bg-primary rounded-full mx-auto mb-4 flex items-center justify-center text-2xl">
             👋
           </div>
           <p className="text-center text-white text-lg">Hello, Jack!</p>
@@ -270,7 +270,7 @@ function AIAgentVisual() {
       {/* Agent Chat Interface 2 */}
       <div className="bg-gradient-to-br from-gray-900/80 to-gray-950/80 border border-gray-800 rounded-2xl p-6">
         <div className="flex items-center gap-3 mb-4">
-          <div className="w-8 h-8 bg-purple-500 rounded-full"></div>
+          <div className="w-8 h-8 bg-primary rounded-full"></div>
           <span className="text-white font-semibold">AI Agent</span>
           <div className="ml-auto flex gap-2">
             <button className="w-8 h-8 bg-gray-800 rounded-lg">+</button>
@@ -284,7 +284,7 @@ function AIAgentVisual() {
             <span className="text-xs text-gray-500 block mt-1">4:30 PM</span>
           </div>
           
-          <div className="bg-purple-900/30 border border-purple-500/30 rounded-lg p-3 text-sm text-gray-200">
+          <div className="bg-primary/20 border border-primary/30 rounded-lg p-3 text-sm text-gray-200">
             Your package was expected on July 13, but it's currently delayed due to a weather issue. The new delivery date is <strong>July 16</strong>.<br/>
             You'll receive a notification once it's out for delivery.
             <div className="mt-3 space-y-1">

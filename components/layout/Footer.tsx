@@ -103,7 +103,7 @@ export default function ChatXFooter() {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-8 mb-16">
           {/* Products */}
           <div>
-            <h3 className="text-sm font-bold mb-4 text-purple-400">{footerLinks.products.title}</h3>
+            <h3 className="text-sm font-bold mb-4 text-primary">{footerLinks.products.title}</h3>
             <ul className="space-y-2.5">
               {footerLinks.products.links.map((link, index) => (
                 <li key={index}>
@@ -117,7 +117,7 @@ export default function ChatXFooter() {
 
           {/* Platform Features */}
           <div>
-            <h3 className="text-sm font-bold mb-4 text-purple-400">{footerLinks.platformFeatures.title}</h3>
+            <h3 className="text-sm font-bold mb-4 text-primary">{footerLinks.platformFeatures.title}</h3>
             <ul className="space-y-2.5">
               {footerLinks.platformFeatures.links.map((link, index) => (
                 <li key={index}>
@@ -131,7 +131,7 @@ export default function ChatXFooter() {
 
           {/* Solutions */}
           <div>
-            <h3 className="text-sm font-bold mb-4 text-purple-400">{footerLinks.solutions.title}</h3>
+            <h3 className="text-sm font-bold mb-4 text-primary">{footerLinks.solutions.title}</h3>
             <ul className="space-y-2.5">
               {footerLinks.solutions.links.map((link, index) => (
                 <li key={index}>
@@ -146,7 +146,7 @@ export default function ChatXFooter() {
           {/* Developers & Build */}
           <div>
             <div className="mb-8">
-              <h3 className="text-sm font-bold mb-4 text-purple-400">{footerLinks.developers.title}</h3>
+              <h3 className="text-sm font-bold mb-4 text-primary">{footerLinks.developers.title}</h3>
               <ul className="space-y-2.5">
                 {footerLinks.developers.links.map((link, index) => (
                   <li key={index}>
@@ -158,7 +158,7 @@ export default function ChatXFooter() {
               </ul>
             </div>
             <div>
-              <h3 className="text-sm font-bold mb-4 text-purple-400">{footerLinks.build.title}</h3>
+              <h3 className="text-sm font-bold mb-4 text-primary">{footerLinks.build.title}</h3>
               <ul className="space-y-2.5">
                 {footerLinks.build.links.map((link, index) => (
                   <li key={index}>
@@ -173,7 +173,7 @@ export default function ChatXFooter() {
 
           {/* Resources */}
           <div className="col-span-2 md:col-span-1">
-            <h3 className="text-sm font-bold mb-4 text-purple-400">{footerLinks.resources.title}</h3>
+            <h3 className="text-sm font-bold mb-4 text-primary">{footerLinks.resources.title}</h3>
             <ul className="space-y-2.5">
               {footerLinks.resources.links.map((link, index) => (
                 <li key={index}>
@@ -187,7 +187,7 @@ export default function ChatXFooter() {
 
           {/* Company */}
           <div className="col-span-2 md:col-span-1">
-            <h3 className="text-sm font-bold mb-4 text-purple-400">{footerLinks.company.title}</h3>
+            <h3 className="text-sm font-bold mb-4 text-primary">{footerLinks.company.title}</h3>
             <ul className="space-y-2.5">
               {footerLinks.company.links.map((link, index) => (
                 <li key={index}>

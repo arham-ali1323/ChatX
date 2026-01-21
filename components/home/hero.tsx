@@ -59,7 +59,7 @@ export function Hero() {
         {/* Buttons */}
         <div className="mt-16 flex flex-wrap justify-center gap-4">
           <Link
-            className="btn-7 rounded-md bg-blue-500 px-8 py-4 text-sm font-medium text-white transition hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200"
+            className="btn-7 rounded-md bg-primary px-8 py-4 text-sm font-medium text-white transition hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200"
             href={"/pricing"}
           >
             Start ChatX Free

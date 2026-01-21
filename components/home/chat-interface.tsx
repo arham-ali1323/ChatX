@@ -32,7 +32,7 @@ export default function ChatInterface() {
       {/* Animated Background Gradient */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
-          className="absolute top-1/4 -left-1/4 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl"
+          className="absolute top-1/4 -left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl"
           animate={{
             scale: [1, 1.2, 1],
             opacity: [0.3, 0.5, 0.3],
@@ -59,7 +59,7 @@ export default function ChatInterface() {
           >
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
               The complete platform for every{' '}
-              <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent">
                 conversation
               </span>
             </h1>
@@ -73,7 +73,7 @@ export default function ChatInterface() {
 
             <div className="flex flex-wrap gap-4">
               <motion.button
-                className="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-purple-500/50 transition-all"
+                className="px-8 py-4 bg-gradient-to-r from-primary to-blue-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-primary/50 transition-all"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -101,11 +101,11 @@ export default function ChatInterface() {
               {/* User-to-User Communication */}
               <motion.div
                 className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-xl rounded-2xl p-6 border border-slate-700/50"
-                whileHover={{ scale: 1.02, borderColor: 'rgba(147, 51, 234, 0.5)' }}
+                whileHover={{ scale: 1.02, borderColor: 'rgba(59, 130, 246, 0.5)' }}
               >
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 bg-slate-700/50 rounded-lg flex items-center justify-center">
-                    <MessageSquare className="w-5 h-5 text-purple-400" />
+                    <MessageSquare className="w-5 h-5 text-primary" />
                   </div>
                   <div>
                     <p className="text-xs text-slate-400">Chat & Messaging</p>
@@ -113,7 +113,7 @@ export default function ChatInterface() {
                 </div>
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 bg-slate-700/50 rounded-lg flex items-center justify-center">
-                    <Phone className="w-5 h-5 text-purple-400" />
+                    <Phone className="w-5 h-5 text-primary" />
                   </div>
                   <div>
                     <p className="text-xs text-slate-400">Voice and Video Calling</p>
@@ -125,7 +125,7 @@ export default function ChatInterface() {
               {/* User-to-Agent */}
               <motion.div
                 className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-xl rounded-2xl p-6 border border-slate-700/50"
-                whileHover={{ scale: 1.02, borderColor: 'rgba(147, 51, 234, 0.5)' }}
+                whileHover={{ scale: 1.02, borderColor: 'rgba(59, 130, 246, 0.5)' }}
               >
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 bg-slate-700/50 rounded-lg flex items-center justify-center">
@@ -139,13 +139,13 @@ export default function ChatInterface() {
 
             {/* Center - CometChat Core */}
             <motion.div
-              className="bg-gradient-to-br from-purple-900/30 via-slate-800/50 to-blue-900/30 backdrop-blur-xl rounded-3xl p-8 border border-purple-500/30 mb-8 relative overflow-hidden"
+              className="bg-gradient-to-br from-primary/20 via-slate-800/50 to-blue-900/30 backdrop-blur-xl rounded-3xl p-8 border border-primary/30 mb-8 relative overflow-hidden"
               initial={{ scale: 0.9 }}
               animate={{ scale: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
               <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-purple-600/10 to-blue-600/10"
+                className="absolute inset-0 bg-gradient-to-r from-primary/10 to-blue-600/10"
                 animate={{
                   opacity: [0.5, 0.8, 0.5],
                 }}
@@ -172,7 +172,7 @@ export default function ChatInterface() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.6 + index * 0.1 }}
-                    whileHover={{ scale: 1.05, borderColor: 'rgba(147, 51, 234, 0.5)' }}
+                    whileHover={{ scale: 1.05, borderColor: 'rgba(59, 130, 246, 0.5)' }}
                   >
                     <Icon className="w-6 h-6 text-slate-400 mx-auto mb-2" />
                     <p className="text-xs text-slate-400 whitespace-pre-line leading-tight">
@@ -278,7 +278,7 @@ export default function ChatInterface() {
           ].map((stat, i) => (
             <div key={i} className="text-center">
               <motion.h3
-                className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-2"
+                className="text-4xl font-bold bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent mb-2"
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ delay: 1 + i * 0.1, type: 'spring' }}

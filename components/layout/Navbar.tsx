@@ -63,13 +63,13 @@ export default function Navbar() {
              <Link href="/login" className="hidden lg:block px-6 py-3 text-sm font-bold text-white uppercase hover:bg-blue-400 transition">
               Log in
             </Link>
-            <Link href="/login" className="hidden lg:block bg-blue-500 px-6 py-3 text-sm font-bold text-white uppercase hover:bg-blue-400 transition">
+            <Link href="/login" className="hidden lg:block bg-primary px-6 py-3 text-sm font-bold text-white uppercase hover:bg-blue-400 transition">
               Schedule Demo
             </Link>
 
             {/* Mobile Toggle */}
             <button
-              className="lg:hidden bg-blue-500 p-3"
+              className="lg:hidden bg-primary p-3"
               onClick={() => setOpen(!open)}
             >
               {open ? <X /> : <Menu />}
@@ -148,7 +148,7 @@ export default function Navbar() {
               )}
             </div>
 
-            <button className="mt-4 bg-blue-500 px-8 py-3 text-white text-sm font-bold uppercase">
+            <button className="mt-4 bg-primary px-8 py-3 text-white text-sm font-bold uppercase">
               Start with ChatX
             </button>
           </nav>

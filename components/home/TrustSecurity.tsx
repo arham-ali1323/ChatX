@@ -75,7 +75,7 @@ export default function TrustSecurity() {
     <section className="relative min-h-screen bg-linear-to-b from-gray-950 via-indigo-950/20 to-gray-950 py-20 overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-purple-600 opacity-10 blur-3xl rounded-full"></div>
+        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary opacity-10 blur-3xl rounded-full"></div>
         <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-blue-600 opacity-10 blur-3xl rounded-full"></div>
       </div>
 
@@ -83,7 +83,7 @@ export default function TrustSecurity() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-block mb-4">
-            <span className="text-purple-400 text-sm font-semibold tracking-wider uppercase">
+            <span className="text-primary text-sm font-semibold tracking-wider uppercase">
               ChatX Security & Trust
             </span>
           </div>
@@ -130,17 +130,17 @@ function FeatureCard({ feature, isHovered, onHover, onLeave }: {
               {/* Network diagram */}
               <div className="flex gap-8">
                 <div className="flex flex-col gap-3">
-                  <div className="w-16 h-8 bg-purple-500/20 border border-purple-500/30 rounded"></div>
-                  <div className="w-16 h-8 bg-purple-500/20 border border-purple-500/30 rounded"></div>
+                  <div className="w-16 h-8 bg-primary/20 border border-primary/30 rounded"></div>
+                  <div className="w-16 h-8 bg-primary/20 border border-primary/30 rounded"></div>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-purple-500/30 border border-purple-500/50 rounded-full flex items-center justify-center">
-                    <div className="w-6 h-6 bg-purple-500 rounded-full"></div>
+                  <div className="w-12 h-12 bg-primary/30 border border-primary/50 rounded-full flex items-center justify-center">
+                    <div className="w-6 h-6 bg-primary rounded-full"></div>
                   </div>
                 </div>
                 <div className="flex flex-col gap-3">
-                  <div className="w-16 h-8 bg-purple-500/20 border border-purple-500/30 rounded"></div>
-                  <div className="w-16 h-8 bg-purple-500/20 border border-purple-500/30 rounded"></div>
+                  <div className="w-16 h-8 bg-primary/20 border border-primary/30 rounded"></div>
+                  <div className="w-16 h-8 bg-primary/20 border border-primary/30 rounded"></div>
                 </div>
               </div>
             </div>
@@ -150,20 +150,20 @@ function FeatureCard({ feature, isHovered, onHover, onLeave }: {
       case 'lock':
         return (
           <div className="relative h-32 flex items-center justify-center">
-            <div className="flex flex-col gap-2 text-purple-400">
+            <div className="flex flex-col gap-2 text-primary">
               <div className="flex items-center gap-2 text-xs">
-                <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
+                <div className="w-2 h-2 bg-primary rounded-full"></div>
                 <span>AES-256 encryption</span>
               </div>
               <div className="flex items-center gap-2 text-xs">
-                <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
+                <div className="w-2 h-2 bg-primary rounded-full"></div>
                 <span>TLS 1.3</span>
               </div>
               <div className="flex items-center gap-2 text-xs">
-                <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
+                <div className="w-2 h-2 bg-primary rounded-full"></div>
                 <span>End-to-end secure</span>
               </div>
-              <svg className="w-16 h-16 text-purple-500 mt-2 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+              <svg className="w-16 h-16 text-primary mt-2 mx-auto" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
               </svg>
             </div>
@@ -192,7 +192,7 @@ function FeatureCard({ feature, isHovered, onHover, onLeave }: {
                   {[...Array(5)].map((_, i) => (
                     <div
                       key={i}
-                      className="absolute w-32 h-px bg-linear-to-r from-purple-500/0 via-purple-500/50 to-purple-500/0"
+                      className="absolute w-32 h-px bg-linear-to-r from-primary/0 via-primary/50 to-primary/0"
                       style={{
                         transform: `rotate(${i * 36}deg)`,
                         transformOrigin: 'center'
@@ -200,13 +200,13 @@ function FeatureCard({ feature, isHovered, onHover, onLeave }: {
                     ></div>
                   ))}
                   {/* Center node */}
-                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-purple-500 rounded-full"></div>
+                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-primary rounded-full"></div>
                   {/* Edge nodes */}
-                  <div className="absolute w-3 h-3 bg-purple-400 rounded-full" style={{ top: '10%', left: '50%', transform: 'translate(-50%, -50%)' }}></div>
-                  <div className="absolute w-3 h-3 bg-purple-400 rounded-full" style={{ top: '31%', left: '81%', transform: 'translate(-50%, -50%)' }}></div>
-                  <div className="absolute w-3 h-3 bg-purple-400 rounded-full" style={{ top: '69%', left: '81%', transform: 'translate(-50%, -50%)' }}></div>
-                  <div className="absolute w-3 h-3 bg-purple-400 rounded-full" style={{ top: '90%', left: '50%', transform: 'translate(-50%, -50%)' }}></div>
-                  <div className="absolute w-3 h-3 bg-purple-400 rounded-full" style={{ top: '69%', left: '19%', transform: 'translate(-50%, -50%)' }}></div>
+                  <div className="absolute w-3 h-3 bg-primary rounded-full" style={{ top: '10%', left: '50%', transform: 'translate(-50%, -50%)' }}></div>
+                  <div className="absolute w-3 h-3 bg-primary rounded-full" style={{ top: '31%', left: '81%', transform: 'translate(-50%, -50%)' }}></div>
+                  <div className="absolute w-3 h-3 bg-primary rounded-full" style={{ top: '69%', left: '81%', transform: 'translate(-50%, -50%)' }}></div>
+                  <div className="absolute w-3 h-3 bg-primary rounded-full" style={{ top: '90%', left: '50%', transform: 'translate(-50%, -50%)' }}></div>
+                  <div className="absolute w-3 h-3 bg-primary rounded-full" style={{ top: '69%', left: '19%', transform: 'translate(-50%, -50%)' }}></div>
                 </div>
               </div>
             </div>
@@ -227,7 +227,7 @@ function FeatureCard({ feature, isHovered, onHover, onLeave }: {
       case 'shield':
         return (
           <div className="relative h-20 flex items-center justify-center">
-            <svg className="w-16 h-16 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+            <svg className="w-16 h-16 text-primary" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
             </svg>
           </div>
@@ -236,10 +236,10 @@ function FeatureCard({ feature, isHovered, onHover, onLeave }: {
       case 'lock-shield':
         return (
           <div className="relative h-20 flex items-center justify-center gap-4">
-            <svg className="w-12 h-12 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+            <svg className="w-12 h-12 text-primary" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
             </svg>
-            <svg className="w-12 h-12 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+            <svg className="w-12 h-12 text-primary" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
             </svg>
           </div>
@@ -258,7 +258,7 @@ function FeatureCard({ feature, isHovered, onHover, onLeave }: {
         feature.span || ''
       } ${
         isHovered 
-          ? 'border-purple-500/50 shadow-xl shadow-purple-500/10' 
+          ? 'border-primary/50 shadow-xl shadow-primary/10' 
           : 'border-gray-800 hover:border-gray-700'
       }`}
     >
@@ -274,7 +274,7 @@ function FeatureCard({ feature, isHovered, onHover, onLeave }: {
         </h3>
 
         {feature.subtitle && (
-          <p className="text-purple-400 text-sm font-semibold mb-2">
+          <p className="text-primary text-sm font-semibold mb-2">
             {feature.subtitle}
           </p>
         )}
@@ -287,8 +287,8 @@ function FeatureCard({ feature, isHovered, onHover, onLeave }: {
       </div>
 
       {/* Hover Glow */}
-      <div className={`absolute inset-0 rounded-xl bg-linear-to-br from-purple-500/0 to-blue-500/0 transition-all duration-300 pointer-events-none ${
-        isHovered ? 'from-purple-500/5 to-blue-500/5' : ''
+      <div className={`absolute inset-0 rounded-xl bg-linear-to-br from-primary/0 to-blue-500/0 transition-all duration-300 pointer-events-none ${
+        isHovered ? 'from-primary/5 to-blue-500/5' : ''
       }`}></div>
     </div>
   );

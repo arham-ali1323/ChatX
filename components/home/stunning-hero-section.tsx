@@ -83,7 +83,7 @@ export default function StunningHeroSection() {
           <h5 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">
             ChatX: Conversations
             <br />
-            <span className="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-indigo-400 via-primary to-pink-400 bg-clip-text text-transparent">
               Reimagined.
             </span>
             <br />
@@ -112,7 +112,7 @@ export default function StunningHeroSection() {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="group relative px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-semibold rounded-xl shadow-2xl shadow-indigo-500/50 transition-all overflow-hidden"
+            className="group relative px-8 py-4 bg-gradient-to-r from-indigo-600 to-primary hover:from-indigo-500 hover:to-primary text-white font-semibold rounded-xl shadow-2xl shadow-indigo-500/50 transition-all overflow-hidden"
           >
             <span className="relative z-10 flex items-center gap-2">
               Start Chatting Free
@@ -121,7 +121,7 @@ export default function StunningHeroSection() {
             
             {/* Animated Background */}
             <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity"
+              className="absolute inset-0 bg-gradient-to-r from-primary to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity"
               initial={false}
             />
           </motion.button>
@@ -157,7 +157,7 @@ export default function StunningHeroSection() {
           </div>
           <div className="w-px h-4 bg-slate-700" />
           <div className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-purple-500 rounded-full" />
+            <div className="w-2 h-2 bg-primary rounded-full" />
             <span className="text-sm">End-to-end encrypted</span>
           </div>
         </motion.div>
@@ -180,7 +180,7 @@ export default function StunningHeroSection() {
           }}
         />
         <motion.div
-          className="absolute bottom-1/4 left-1/4 w-2 h-2 bg-purple-500 rounded-full blur-sm"
+          className="absolute bottom-1/4 left-1/4 w-2 h-2 bg-primary rounded-full blur-sm"
           animate={{
             y: [0, 20, 0],
             opacity: [0.3, 0.8, 0.3],

@@ -60,7 +60,7 @@ export default function BackToTop() {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0 }}
             onClick={toggleChat}
-            className="fixed bottom-8 right-8 z-50 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white p-4 rounded-full shadow-lg shadow-indigo-500/50 transition-all duration-300 group"
+            className="fixed bottom-8 right-8 z-50 bg-gradient-to-r from-primary to-primary hover:from-primary hover:to-primary text-white p-4 rounded-full shadow-lg shadow-primary/50 transition-all duration-300 group"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
@@ -79,7 +79,7 @@ export default function BackToTop() {
             className="fixed bottom-24 right-8 z-50 w-80 h-96 bg-white rounded-2xl shadow-2xl border border-gray-200 flex flex-col"
           >
             {/* Chat Header */}
-            <div className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-4 rounded-t-2xl flex items-center justify-between">
+            <div className="bg-gradient-to-r from-primary to-primary text-white p-4 rounded-t-2xl flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <MessageCircle className="w-5 h-5" />
                 <h3 className="font-semibold">Chat Support</h3>
@@ -104,7 +104,7 @@ export default function BackToTop() {
                   <div
                     className={`max-w-[70%] p-3 rounded-2xl text-sm ${
                       msg.sender === 'user'
-                        ? 'bg-gradient-to-r from-indigo-600 to-purple-600 text-white'
+                        ? 'bg-gradient-to-r from-primary to-primary text-white'
                         : 'bg-gray-100 text-gray-800'
                     }`}
                   >
@@ -127,7 +127,7 @@ export default function BackToTop() {
                 />
                 <button
                   onClick={sendMessage}
-                  className="p-2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-full hover:shadow-lg transition-all"
+                  className="p-2 bg-gradient-to-r from-primary to-primary text-white rounded-full hover:shadow-lg transition-all"
                 >
                   <Send className="w-4 h-4" />
                 </button>

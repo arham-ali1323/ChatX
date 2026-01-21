@@ -70,7 +70,7 @@ export default function FeaturesShowcase() {
     <section className="relative min-h-screen bg-gradient-to-b from-gray-950 via-indigo-950 to-gray-950 py-20 overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-600 opacity-20 blur-3xl rounded-full"></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary opacity-20 blur-3xl rounded-full"></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-600 opacity-20 blur-3xl rounded-full"></div>
       </div>
 
@@ -78,7 +78,7 @@ export default function FeaturesShowcase() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-block mb-4">
-            <span className="text-purple-400 text-sm font-semibold tracking-wider uppercase px-4 py-2 bg-purple-500/10 border border-purple-500/20 rounded-full">
+            <span className="text-primary text-sm font-semibold tracking-wider uppercase px-4 py-2 bg-primary/10 border border-primary/20 rounded-full">
               ChatX Core Features
             </span>
           </div>
@@ -101,12 +101,12 @@ export default function FeaturesShowcase() {
               key={feature.id}
               onMouseEnter={() => setHoveredCard(feature.id)}
               onMouseLeave={() => setHoveredCard(null)}
-              className={`${feature.span} group relative bg-gradient-to-br from-gray-900/50 to-gray-950/50 backdrop-blur-sm border border-gray-800 rounded-lg p-8 transition-all duration-300 hover:border-purple-500/50 hover:shadow-xl hover:shadow-purple-500/10`}
+              className={`${feature.span} group relative bg-gradient-to-br from-gray-900/50 to-gray-950/50 backdrop-blur-sm border border-gray-800 rounded-lg p-8 transition-all duration-300 hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10`}
             >
               {/* Icon */}
               <div className={`inline-flex items-center justify-center w-16 h-16 rounded-lg mb-6 transition-all duration-300 ${
                 hoveredCard === feature.id 
-                  ? 'bg-purple-500/20 text-purple-400 scale-110' 
+                  ? 'bg-primary/20 text-primary scale-110' 
                   : 'bg-gray-800/50 text-gray-400'
               }`}>
                 {feature.icon}
@@ -126,7 +126,7 @@ export default function FeaturesShowcase() {
               {/* Learn More Link */}
               <button className={`text-sm font-semibold flex items-center gap-2 transition-all duration-300 ${
                 hoveredCard === feature.id 
-                  ? 'text-purple-400' 
+                  ? 'text-primary' 
                   : 'text-gray-500'
               }`}>
                 Learn more
@@ -143,8 +143,8 @@ export default function FeaturesShowcase() {
               </button>
 
               {/* Hover Glow Effect */}
-              <div className={`absolute inset-0 rounded-lg bg-gradient-to-br from-purple-500/0 to-blue-500/0 transition-all duration-300 pointer-events-none ${
-                hoveredCard === feature.id ? 'from-purple-500/5 to-blue-500/5' : ''
+              <div className={`absolute inset-0 rounded-lg bg-gradient-to-br from-primary/0 to-blue-500/0 transition-all duration-300 pointer-events-none ${
+                hoveredCard === feature.id ? 'from-primary/5 to-blue-500/5' : ''
               }`}></div>
             </div>
           ))}
@@ -157,12 +157,12 @@ export default function FeaturesShowcase() {
               key={feature.id}
               onMouseEnter={() => setHoveredCard(feature.id)}
               onMouseLeave={() => setHoveredCard(null)}
-              className={`${feature.span} group relative bg-gradient-to-br from-gray-900/50 to-gray-950/50 backdrop-blur-sm border border-gray-800 rounded-lg p-8 transition-all duration-300 hover:border-purple-500/50 hover:shadow-xl hover:shadow-purple-500/10`}
+              className={`${feature.span} group relative bg-gradient-to-br from-gray-900/50 to-gray-950/50 backdrop-blur-sm border border-gray-800 rounded-lg p-8 transition-all duration-300 hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10`}
             >
               {/* Icon */}
               <div className={`inline-flex items-center justify-center w-16 h-16 rounded-lg mb-6 transition-all duration-300 ${
                 hoveredCard === feature.id 
-                  ? 'bg-purple-500/20 text-purple-400 scale-110' 
+                  ? 'bg-primary/20 text-primary scale-110' 
                   : 'bg-gray-800/50 text-gray-400'
               }`}>
                 {feature.icon}
@@ -182,7 +182,7 @@ export default function FeaturesShowcase() {
               {/* Learn More Link */}
               <button className={`text-sm font-semibold flex items-center gap-2 transition-all duration-300 ${
                 hoveredCard === feature.id 
-                  ? 'text-purple-400' 
+                  ? 'text-primary' 
                   : 'text-gray-500'
               }`}>
                 Learn more
@@ -199,8 +199,8 @@ export default function FeaturesShowcase() {
               </button>
 
               {/* Hover Glow Effect */}
-              <div className={`absolute inset-0 rounded-lg bg-gradient-to-br from-purple-500/0 to-blue-500/0 transition-all duration-300 pointer-events-none ${
-                hoveredCard === feature.id ? 'from-purple-500/5 to-blue-500/5' : ''
+              <div className={`absolute inset-0 rounded-lg bg-gradient-to-br from-primary/0 to-blue-500/0 transition-all duration-300 pointer-events-none ${
+                hoveredCard === feature.id ? 'from-primary/5 to-blue-500/5' : ''
               }`}></div>
             </div>
           ))}
@@ -208,7 +208,7 @@ export default function FeaturesShowcase() {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <button className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-purple-500/30">
+          <button className="bg-primary hover:bg-primary/90 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-primary/30">
             Discover ChatX Features
           </button>
         </div>
