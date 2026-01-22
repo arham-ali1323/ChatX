@@ -1,35 +1,45 @@
 "use client";
 import { useState } from 'react';
+import {
+  SiReact,
+  SiApple,
+  SiFlutter,
+  SiAngular,
+  SiAndroid,
+  SiWordpress,
+  SiVuedotjs,
+  SiKotlin,
+  SiPhp,
+  SiIonic,
+  SiLaravel
+} from "react-icons/si";
+
 
 export default function TechnologiesShowcase() {
   const [hoveredTech, setHoveredTech] = useState<string | null>(null);
 
   const technologies = [
-    // Left Column
-    [
-      { id: 'react', name: 'React', icon: '⚛️' },
-      { id: 'ios', name: 'iOS', icon: '🍎' },
-      { id: 'flutter', name: 'Flutter', icon: '🦋' }
-    ],
-    // Center Column
-    [
-      { id: 'angular', name: 'Angular', icon: '🅰️' },
-      { id: 'android', name: 'Android Java', icon: '🤖' },
-      { id: 'wordpress', name: 'WordPress', icon: 'W' }
-    ],
-    // Right Column
-    [
-      { id: 'vue', name: 'Vue', icon: 'V' },
-      { id: 'kotlin', name: 'Android Kotlin', icon: 'K' },
-      { id: 'php', name: 'PHP', icon: 'php' }
-    ],
-    // Far Right Column
-    [
-      { id: 'react-native', name: 'React Native', icon: '⚛️' },
-      { id: 'ionic', name: 'Ionic/Capacitor', icon: 'I' },
-      { id: 'laravel', name: 'Laravel', icon: 'L' }
-    ]
-  ];
+  [
+    { id: "react", name: "React", icon: SiReact },
+    { id: "ios", name: "iOS", icon: SiApple },
+    { id: "flutter", name: "Flutter", icon: SiFlutter }
+  ],
+  [
+    { id: "angular", name: "Angular", icon: SiAngular },
+    { id: "android", name: "Android", icon: SiAndroid },
+    { id: "wordpress", name: "WordPress", icon: SiWordpress }
+  ],
+  [
+    { id: "vue", name: "Vue.js", icon: SiVuedotjs },
+    { id: "kotlin", name: "Kotlin", icon: SiKotlin },
+    { id: "php", name: "PHP", icon: SiPhp }
+  ],
+  [
+    { id: "react-native", name: "React Native", icon: SiReact },
+    { id: "ionic", name: "Ionic", icon: SiIonic },
+    { id: "laravel", name: "Laravel", icon: SiLaravel }
+  ]
+];
 
   return (
     <section className="relative min-h-screen bg-gradient-to-b from-gray-950 via-indigo-950/30 to-gray-950 py-20 overflow-hidden flex items-center">
@@ -163,13 +173,15 @@ export default function TechnologiesShowcase() {
 }
 
 interface TechCardProps {
-  tech: { id: string; name: string; icon: string };
+  tech: { id: string; name: string; icon: React.ComponentType<any> };
   isHovered: boolean;
   onHover: () => void;
   onLeave: () => void;
 }
 
 function TechCard({ tech, isHovered, onHover, onLeave }: TechCardProps) {
+  const Icon = tech.icon;
+  
   return (
     <div
       onMouseEnter={onHover}
@@ -181,10 +193,12 @@ function TechCard({ tech, isHovered, onHover, onLeave }: TechCardProps) {
       }`}
     >
       {/* Icon */}
-      <div className={`text-2xl transition-transform duration-300 ${
+      <div className={`transition-transform duration-300 ${
         isHovered ? 'scale-110' : ''
       }`}>
-        {tech.icon}
+        <Icon className={`w-6 h-6 ${
+          isHovered ? 'text-white' : 'text-gray-400'
+        }`} />
       </div>
 
       {/* Text */}
