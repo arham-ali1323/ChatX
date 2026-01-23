@@ -1,5 +1,5 @@
 import { Hero } from '@/components/home/Home-hero';
-import ChatInterface from '@/components/home/chat-interface';
+import ChatInterface from '@/components/Chat-massages/ChatInterface';
 import FeaturesShowcase from '@/components/home/features-section';
 import TechnologiesArchitecture from '@/components/home/technologies-architecture';
 import TrustSecurity from '@/components/home/TrustSecurity';
