@@ -1,108 +1,170 @@
-import React from 'react';
-import { Hexagon, Sparkles, Box, Layout } from 'lucide-react';
+"use client";
+import { useState } from "react";
 
-const IntegrationSection = () => {
-  const integrationMethods = [
+type IntegrationMethod = {
+  id: string;
+  title: string;
+  icon: string;
+  description: string;
+  features: string[];
+};
+
+export default function ChatIntegrationMethods() {
+  const [hovered, setHovered] = useState<string | null>(null);
+
+  const integrationMethods: IntegrationMethod[] = [
     {
+      id: "widget",
       title: "Widget Builder",
-      description: "Customize entirely and toggle chat functions as needed",
+      icon: "⚙️",
+      description: "The fastest way to add chat with zero coding required.",
       features: [
-        "Customize entirely and toggle chat functions as needed",
-        "Integrate with a single line of code",
-        "Deploy and launch your in-app chat"
+        "Customize chat behavior & UI",
+        "Single line integration",
+        "Launch instantly in your app",
       ],
-      icon: <Layout className="w-5 h-5 text-purple-400" />,
-      additionalText: "Widget Builder allows full flexibility to customize chat experience to your exact needs.",
-      isFeatured: true,
     },
     {
+      id: "ui-kit",
       title: "UI Kit Builder",
-      description: "The low code option to build in-app chat without the hassle",
-      icon: <Hexagon className="w-5 h-5 text-gray-400" />,
-      additionalText: "Use UI Kit Builder to speed up development with ready-made components.",
-      isFeatured: false,
+      icon: "🎨",
+      description: "Low-code builder for flexible chat experiences.",
+      features: [
+        "Drag & drop UI blocks",
+        "Theming support",
+        "Faster than custom builds",
+      ],
     },
     {
+      id: "ui-kits",
       title: "Chat UI Kits",
-      description: "Pre-built UI components with modern and pixel perfect design that is completely customizable.",
-      icon: <Sparkles className="w-5 h-5 text-gray-400" />,
-      additionalText: "Chat UI Kits give you a polished look instantly without coding everything from scratch.",
-      isFeatured: false,
+      icon: "✨",
+      description: "Pre-built components with pixel-perfect design.",
+      features: [
+        "Modern UI components",
+        "Fully customizable",
+        "Production ready",
+      ],
     },
     {
+      id: "sdks",
       title: "Chat SDKs",
-      description: "Open source SDKs and APIs for all popular frameworks to build bespoke chat experiences.",
-      icon: <Box className="w-5 h-5 text-gray-400" />,
-      additionalText: "Integrate Chat SDKs for full control over backend and front-end chat experience.",
-      isFeatured: false,
+      icon: "🔧",
+      description: "Build fully custom chat experiences.",
+      features: [
+        "Open-source SDKs",
+        "REST & WebSocket APIs",
+        "Framework agnostic",
+      ],
     },
   ];
 
   return (
-    <section className="bg-[#050509] text-white py-24 px-6 font-sans">
-      <div className="max-w-6xl mx-auto">
+    <section className="relative min-h-screen bg-gradient-to-b from-gray-950 via-indigo-950/10 to-gray-950 py-20">
+      <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-20">
-          <h3 className="text-purple-500 font-medium mb-4">Integrating In-App Chat</h3>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">
-            Integrate real-time messaging that <br /> grows with your needs
+        <div className="text-center mb-16">
+          <span className="text-purple-400 text-sm font-semibold uppercase tracking-wider">
+            Integrating In-App Chat
+          </span>
+
+          <h2 className="text-4xl md:text-6xl font-bold text-white mt-4 mb-6">
+            Integrate real-time messaging
+            <br /> that grows with your needs
           </h2>
-          <p className="text-gray-400 text-lg">
-            Start with any integration method and scale to others as your needs evolve
+
+          <p className="text-gray-400 max-w-3xl mx-auto">
+            Start with any integration method and scale effortlessly
           </p>
         </div>
 
-        {/* Integration Grid with Connector Lines */}
-        <div className="relative grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Horizontal Connector Line (Visible on Desktop) */}
-          <div className="hidden md:block absolute top-[40px] left-0 right-0 h-[1px] bg-gray-800 z-0" />
-
-          {integrationMethods.map((method, index) => (
-            <div key={index} className="relative z-10 flex flex-col group">
-              {/* Node/Icon container */}
-              <div className="flex items-center mb-8">
-                {/* Connection Dot */}
-                <div className="absolute top-[37px] -left-1 w-2 h-2 rounded-full bg-gray-700 border border-gray-900" />
-
-                <div className="p-3 rounded-lg border bg-[#111116] border-gray-800 z-10">
-                  {method.icon}
-                </div>
-              </div>
-
-              {/* Card Content */}
-              <div className={`flex-1 rounded-xl p-6 transition-all duration-300 relative bg-transparent border border-gray-800 hover:border-purple-500/30 hover:bg-purple-900/10`}>
-                <h4 className="text-xl font-bold mb-4">{method.title}</h4>
-                
-                {method.isFeatured ? (
-                  <ul className="space-y-3 mb-4">
-                    {method.features?.map((feature, i) => (
-                      <li key={i} className="flex items-start gap-3 text-sm text-gray-300">
-                        <Sparkles className="w-4 h-4 text-purple-500 mt-1 flex-shrink-0" />
-                        <span>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                ) : (
-                  <p className="text-gray-400 text-sm leading-relaxed mb-4">
-                    {method.description}
-                  </p>
-                )}
-
-                {/* Additional Text on Hover */}
-                <p className="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-2">
-                  {method.additionalText}
-                </p>
-
-                <a href="#" className="text-purple-500 text-sm font-semibold hover:text-purple-400 transition-colors mt-4 inline-block">
-                  Learn more
-                </a>
-              </div>
-            </div>
+        {/* Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {integrationMethods.map((method) => (
+            <IntegrationCard
+              key={method.id}
+              method={method}
+              isHovered={hovered === method.id}
+              onEnter={() => setHovered(method.id)}
+              onLeave={() => setHovered(null)}
+            />
           ))}
         </div>
       </div>
     </section>
   );
-};
+}
 
-export default IntegrationSection;
+function IntegrationCard({
+  method,
+  isHovered,
+  onEnter,
+  onLeave,
+}: {
+  method: IntegrationMethod;
+  isHovered: boolean;
+  onEnter: () => void;
+  onLeave: () => void;
+}) {
+  return (
+    <div
+      onMouseEnter={onEnter}
+      onMouseLeave={onLeave}
+      className={`relative rounded-2xl p-8 border backdrop-blur-sm transition-all duration-300
+        bg-gradient-to-br from-gray-900/50 to-gray-950/50 border-gray-800
+        ${isHovered ? "-translate-y-2 shadow-xl shadow-purple-500/10 border-purple-500/40" : ""}
+      `}
+    >
+      {/* Icon */}
+      <div
+        className={`w-16 h-16 rounded-xl flex items-center justify-center mb-6 transition-all
+          ${
+            isHovered
+              ? "bg-purple-500/20 text-purple-400 scale-110"
+              : "bg-gray-800 text-gray-400"
+          }
+        `}
+      >
+        <span className="text-3xl">{method.icon}</span>
+      </div>
+
+      {/* Title */}
+      <h3 className="text-2xl font-bold text-white mb-3">
+        {method.title}
+      </h3>
+
+      {/* Description */}
+      <p className="text-gray-400 text-sm mb-4">
+        {method.description}
+      </p>
+
+      {/* Hover Content */}
+      <ul
+        className={`space-y-3 overflow-hidden transition-all duration-300
+          ${isHovered ? "max-h-40 opacity-100" : "max-h-0 opacity-0"}
+        `}
+      >
+        {method.features.map((feature, idx) => (
+          <li key={idx} className="flex gap-2 text-sm text-gray-300">
+            <span className="text-purple-400">+</span>
+            {feature}
+          </li>
+        ))}
+      </ul>
+
+      {/* CTA */}
+      <button
+        className={`mt-6 text-sm font-semibold flex items-center gap-2 transition
+          ${isHovered ? "text-purple-400" : "text-gray-500"}
+        `}
+      >
+        Learn more
+        <span
+          className={`transition-transform ${isHovered ? "translate-x-1" : ""}`}
+        >
+          →
+        </span>
+      </button>
+    </div>
+  );
+}
