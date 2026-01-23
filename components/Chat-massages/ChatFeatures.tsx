@@ -76,7 +76,7 @@ export default function ChatFeatures() {
     <section className="relative min-h-screen bg-gradient-to-b from-gray-950 via-indigo-950/20 to-gray-950 py-20 overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-600 opacity-10 blur-3xl rounded-full"></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600 opacity-10 blur-3xl rounded-full"></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-600 opacity-10 blur-3xl rounded-full"></div>
       </div>
 
@@ -126,7 +126,7 @@ function FeatureCard({ feature, isHovered, onHover, onLeave }: {
         return (
           <div className="space-y-2 mb-4">
             <div className="flex justify-end">
-              <div className="bg-purple-600 text-white text-xs px-3 py-2 rounded-2xl rounded-tr-none max-w-[80%]">
+              <div className="bg-blue-600 text-white text-xs px-3 py-2 rounded-2xl rounded-tr-none max-w-[80%]">
                 Hey! How are you?
               </div>
             </div>
@@ -148,7 +148,7 @@ function FeatureCard({ feature, isHovered, onHover, onLeave }: {
               </div>
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
+                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
                   <span className="text-gray-400 text-xs">Sent</span>
                   <span className="text-gray-500 text-xs ml-auto">2:45 PM</span>
                 </div>
@@ -193,14 +193,14 @@ function FeatureCard({ feature, isHovered, onHover, onLeave }: {
         return (
           <div className="bg-gray-800 rounded-lg p-4 mb-4">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full"></div>
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-500 rounded-full"></div>
               <div>
                 <div className="text-white font-semibold">John Doe</div>
                 <div className="text-gray-400 text-xs">@johndoe</div>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-2">
-              <button className="bg-purple-600 text-white text-xs py-2 rounded-lg">Message</button>
+              <button className="bg-blue-600 text-white text-xs py-2 rounded-lg">Message</button>
               <button className="bg-gray-700 text-white text-xs py-2 rounded-lg">Block</button>
             </div>
           </div>
@@ -213,10 +213,10 @@ function FeatureCard({ feature, isHovered, onHover, onLeave }: {
               How can I help you today?
             </div>
             <div className="grid grid-cols-2 gap-2 pl-2">
-              <button className="bg-purple-900/50 border border-purple-500/30 text-purple-300 text-xs py-2 rounded-lg">
+              <button className="bg-blue-900/50 border border-blue-500/30 text-blue-300 text-xs py-2 rounded-lg">
                 Get started
               </button>
-              <button className="bg-purple-900/50 border border-purple-500/30 text-purple-300 text-xs py-2 rounded-lg">
+              <button className="bg-blue-900/50 border border-blue-500/30 text-blue-300 text-xs py-2 rounded-lg">
                 Learn more
               </button>
             </div>
@@ -240,8 +240,8 @@ function FeatureCard({ feature, isHovered, onHover, onLeave }: {
             </div>
             <div className="space-y-2">
               <div className="bg-gray-800/50 rounded p-2">
-                <div className="text-purple-400 text-xs font-semibold mb-1">Sarah • 2 hours ago</div>
-                <div className="text-gray-400 text-xs">Let's meet at the <span className="bg-purple-500/30 text-purple-300">cafe</span> tomorrow</div>
+                <div className="text-blue-400 text-xs font-semibold mb-1">Sarah • 2 hours ago</div>
+                <div className="text-gray-400 text-xs">Let's meet at the <span className="bg-blue-500/30 text-blue-300">cafe</span> tomorrow</div>
               </div>
             </div>
           </div>
@@ -251,7 +251,7 @@ function FeatureCard({ feature, isHovered, onHover, onLeave }: {
         return (
           <div className="mb-4">
             <div className="grid grid-cols-3 gap-2">
-              <div className="aspect-square bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg"></div>
+              <div className="aspect-square bg-gradient-to-br from-blue-500 to-pink-500 rounded-lg"></div>
               <div className="aspect-square bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg"></div>
               <div className="aspect-square bg-gradient-to-br from-orange-500 to-red-500 rounded-lg flex items-center justify-center">
                 <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -260,7 +260,7 @@ function FeatureCard({ feature, isHovered, onHover, onLeave }: {
                 </svg>
               </div>
             </div>
-            <div className="bg-purple-600 text-white text-xs px-3 py-2 rounded-lg mt-2">
+            <div className="bg-blue-600 text-white text-xs px-3 py-2 rounded-lg mt-2">
               📎 Image_2024.jpg
             </div>
           </div>
@@ -271,7 +271,7 @@ function FeatureCard({ feature, isHovered, onHover, onLeave }: {
           <div className="space-y-2 mb-4">
             <div className="bg-gray-800 rounded-lg p-3">
               <div className="flex items-center gap-2 mb-2">
-                <svg className="w-4 h-4 text-purple-400" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-4 h-4 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
                 </svg>
                 <span className="text-white text-xs font-semibold">Yesterday</span>
@@ -316,7 +316,7 @@ function FeatureCard({ feature, isHovered, onHover, onLeave }: {
     <div
       onMouseEnter={onHover}
       onMouseLeave={onLeave}
-      className="group relative bg-gradient-to-br from-gray-900/50 to-gray-950/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 transition-all duration-300 hover:border-purple-500/30 hover:shadow-xl hover:shadow-purple-500/10"
+      className="group relative bg-gradient-to-br from-gray-900/50 to-gray-950/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 transition-all duration-300 hover:border-blue-500/30 hover:shadow-xl hover:shadow-blue-500/10"
     >
       {/* Visual */}
       <div className="min-h-[120px]">
@@ -337,8 +337,8 @@ function FeatureCard({ feature, isHovered, onHover, onLeave }: {
       </div>
 
       {/* Hover Glow */}
-      <div className={`absolute inset-0 rounded-xl bg-gradient-to-br from-purple-500/0 to-blue-500/0 transition-all duration-300 pointer-events-none ${
-        isHovered ? 'from-purple-500/5 to-blue-500/5' : ''
+      <div className={`absolute inset-0 rounded-xl bg-gradient-to-br from-blue-500/0 to-blue-500/0 transition-all duration-300 pointer-events-none ${
+        isHovered ? 'from-blue-500/5 to-blue-500/5' : ''
       }`}></div>
     </div>
   );

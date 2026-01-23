@@ -7,8 +7,8 @@ export default function CaseStudyShowcase() {
       id: 1,
       logo: 'Bitdefender',
       logoSubtext: '®',
-      title: 'How Bitdefender and CometChat Deliver AI-Powered Scam Protection',
-      description: 'Discover how CometChat powers Bitdefender\'s Scamio, delivering real-time AI scam protection at massive scale.',
+      title: 'How Bitdefender and ChatX Deliver AI-Powered Scam Protection',
+      description: 'Discover how ChatX powers Bitdefender\'s Scamio, delivering real-time AI scam protection at massive scale.',
       industry: 'Cybersecurity',
       gradient: 'from-gray-800 to-indigo-900'
     },
@@ -17,7 +17,7 @@ export default function CaseStudyShowcase() {
       logo: 'HealthTech',
       logoSubtext: '',
       title: 'Transforming Patient Care with Real-Time Communication',
-      description: 'Learn how HealthTech integrated CometChat to enable seamless doctor-patient consultations across their telemedicine platform.',
+      description: 'Learn how HealthTech integrated ChatX to enable seamless doctor-patient consultations across their telemedicine platform.',
       industry: 'Healthcare',
       gradient: 'from-gray-800 to-blue-900'
     },
@@ -26,9 +26,9 @@ export default function CaseStudyShowcase() {
       logo: 'EduConnect',
       logoSubtext: '',
       title: 'Scaling Educational Communication to 10M+ Students',
-      description: 'Explore how EduConnect leverages CometChat to power virtual classrooms and student collaboration worldwide.',
+      description: 'Explore how EduConnect leverages ChatX to power virtual classrooms and student collaboration worldwide.',
       industry: 'Education',
-      gradient: 'from-gray-800 to-purple-900'
+      gradient: 'from-gray-800 to-blue-900'
     }
   ];
 
@@ -49,7 +49,7 @@ export default function CaseStudyShowcase() {
       {/* Background Effects */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-indigo-600 opacity-10 blur-3xl rounded-full"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600 opacity-10 blur-3xl rounded-full"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-600 opacity-10 blur-3xl rounded-full"></div>
       </div>
 
       <div className="relative max-w-6xl mx-auto px-6 w-full">
@@ -150,7 +150,7 @@ export default function CaseStudyShowcase() {
               onClick={() => setCurrentIndex(index)}
               className={`transition-all duration-300 ${
                 index === currentIndex
-                  ? 'w-8 h-3 bg-purple-500 rounded-full'
+                  ? 'w-8 h-3 bg-blue-500 rounded-full'
                   : 'w-3 h-3 bg-gray-600 hover:bg-gray-500 rounded-full'
               }`}
               aria-label={`Go to case study ${index + 1}`}

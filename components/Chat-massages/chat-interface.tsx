@@ -137,7 +137,7 @@ export default function ChatInterface() {
               </motion.div>
             </div>
 
-            {/* Center - CometChat Core */}
+            {/* Center - ChatX Core */}
             <motion.div
               className="bg-gradient-to-br from-primary/20 via-slate-800/50 to-blue-900/30 backdrop-blur-xl rounded-3xl p-8 border border-primary/30 mb-8 relative overflow-hidden"
               initial={{ scale: 0.9 }}

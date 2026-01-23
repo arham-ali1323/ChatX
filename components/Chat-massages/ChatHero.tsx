@@ -11,7 +11,7 @@ export function ChatHero() {
       className="relative mx-auto px-4 py-32 text-center overflow-hidden
   bg-[#070B1A]"
     >
-      {/* Purple main glow */}
+      {/* blue main glow */}
       <div className="pointer-events-none absolute inset-0 flex justify-center">
         <div
           className="absolute -top-48 h-[520px] w-[1000px] rounded-full
@@ -20,7 +20,7 @@ export function ChatHero() {
         />
       </div>
 
-      {/* Bottom purple curve */}
+      {/* Bottom blue curve */}
       <div
         className="pointer-events-none absolute inset-x-0 bottom-0 h-48
     bg-[radial-gradient(ellipse_at_bottom,rgba(168,85,247,0.25),transparent_70%)]"
@@ -59,14 +59,14 @@ export function ChatHero() {
         {/* Buttons */}
         <div className="mt-16 flex flex-wrap justify-center gap-4">
           <Link
-            className="rounded-md bg-purple-600 px-8 py-4 text-sm font-medium text-white transition hover:bg-purple-700 dark:bg-purple-600 dark:text-white dark:hover:bg-purple-700"
+            className="rounded-md bg-blue-600 px-8 py-4 text-sm font-medium text-white transition hover:bg-blue-700 dark:bg-blue-600 dark:text-white dark:hover:bg-blue-700"
             href={"/messaging/setup"}
           >
             Start Messaging Free
           </Link>
 
           <Link
-            className="rounded-md bg-transparent border border-purple-500 px-8 py-4 text-sm font-medium text-white transition hover:bg-purple-900/30 dark:bg-transparent dark:text-white dark:hover:bg-purple-900/30"
+            className="rounded-md bg-transparent border border-blue-500 px-8 py-4 text-sm font-medium text-white transition hover:bg-blue-900/30 dark:bg-transparent dark:text-white dark:hover:bg-blue-900/30"
             href={"/messaging/demo"}
           >
             Try Messaging Demo
@@ -85,10 +85,10 @@ export function ChatHero() {
           ].map((feature, index) => (
             <div
               key={index}
-              className="flex items-center gap-2 px-4 py-2 bg-purple-900/20 border border-purple-500/20 rounded-full"
+              className="flex items-center gap-2 px-4 py-2 bg-blue-900/20 border border-blue-500/20 rounded-full"
             >
-              <feature.icon className="w-4 h-4 text-purple-400" />
-              <span className="text-sm text-purple-300">{feature.text}</span>
+              <feature.icon className="w-4 h-4 text-blue-400" />
+              <span className="text-sm text-blue-300">{feature.text}</span>
             </div>
           ))}
         </div>

@@ -37,10 +37,10 @@ export default function ChatCoreProduct() {
   };
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-b from-gray-950 via-purple-950/10 to-gray-950 py-20 overflow-hidden">
+    <section className="relative min-h-screen bg-gradient-to-b from-gray-950 via-blue-950/10 to-gray-950 py-20 overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-purple-600 opacity-10 blur-3xl rounded-full"></div>
+        <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-blue-600 opacity-10 blur-3xl rounded-full"></div>
         <div className="absolute bottom-1/3 right-1/4 w-96 h-96 bg-pink-600 opacity-10 blur-3xl rounded-full"></div>
       </div>
 
@@ -68,7 +68,7 @@ export default function ChatCoreProduct() {
                 onClick={() => setActiveTab(tab.id)}
                 className={`flex items-center gap-2 px-6 py-3 rounded-lg font-medium transition-all duration-300 ${
                   activeTab === tab.id
-                    ? 'bg-purple-600 text-white shadow-lg shadow-purple-500/30'
+                    ? 'bg-blue-600 text-white shadow-lg shadow-blue-500/30'
                     : 'bg-gray-800/50 text-gray-400 hover:bg-gray-800 border border-gray-700'
                 }`}
               >
@@ -86,10 +86,10 @@ export default function ChatCoreProduct() {
             return (
               <div
                 key={index}
-                className="bg-gradient-to-br from-gray-900/50 to-gray-950/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 hover:border-purple-500/30 transition-all duration-300"
+                className="bg-gradient-to-br from-gray-900/50 to-gray-950/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 hover:border-blue-500/30 transition-all duration-300"
               >
-                <div className="w-12 h-12 bg-purple-600/20 rounded-lg flex items-center justify-center mb-4">
-                  <Icon className="w-6 h-6 text-purple-500" />
+                <div className="w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center mb-4">
+                  <Icon className="w-6 h-6 text-blue-500" />
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">{feature.title}</h3>
                 <p className="text-gray-400 text-sm leading-relaxed">{feature.description}</p>
@@ -107,7 +107,7 @@ export default function ChatCoreProduct() {
             { number: '24/7', label: 'Support' }
           ].map((stat, i) => (
             <div key={i} className="text-center">
-              <h3 className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-400 bg-clip-text text-transparent mb-2">
+              <h3 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-pink-400 bg-clip-text text-transparent mb-2">
                 {stat.number}
               </h3>
               <p className="text-gray-400">{stat.label}</p>

@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 
-export default function CometChatTimeline() {
+export default function ChatXTimeline() {
   const [activeSection, setActiveSection] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -10,7 +10,7 @@ export default function CometChatTimeline() {
     {
       id: 0,
       badge: "Core Products",
-      title: "The CometChat communication stack",
+      title: "The ChatX communication stack",
       description: "These are the building blocks of modern interaction — user-to-user chat, voice and video, and conversational AI agents. Each piece is modular, interoperable, and production-ready from day one, so you can start simple and scale without limits.",
       subtitle: "Real-time user communication",
       visual: "architecture"
@@ -18,8 +18,8 @@ export default function CometChatTimeline() {
     {
       id: 1,
       badge: "Core Products",
-      title: "The CometChat communication stack",
-      description: "Power rich, branded conversations across chat and calls with prebuilt UI, strong infra, and developer-friendly tooling. Whether it's DMs, forums, consultations, or classrooms, CometChat makes it seamless, secure, and ready to scale.",
+      title: "The ChatX communication stack",
+      description: "Power rich, branded conversations across chat and calls with prebuilt UI, strong infra, and developer-friendly tooling. Whether it's DMs, forums, consultations, or classrooms, ChatX makes it seamless, secure, and ready to scale.",
       keyFeatures: [
         "1:1, group, and broadcast chat",
         "Rich media, reactions, threads",
@@ -32,10 +32,10 @@ export default function CometChatTimeline() {
     {
       id: 2,
       badge: "Core Products",
-      title: "The CometChat communication stack",
+      title: "The ChatX communication stack",
       subtitle: "Full-stack AI agent platform",
-      description: "LLMs can think. CometChat helps them perform.",
-      subdescription: "From branded interfaces to guardrails, re-engagement, and insights, CometChat gives you the full stack to deploy, monitor, and evolve AI agents - fast. No glue code, no chaos.",
+      description: "LLMs can think. ChatX helps them perform.",
+      subdescription: "From branded interfaces to guardrails, re-engagement, and insights, ChatX gives you the full stack to deploy, monitor, and evolve AI agents - fast. No glue code, no chaos.",
       keyFeatures: [
         "Plug in your agent or build in-platform",
         "RAG & tool-calling support",
@@ -196,9 +196,9 @@ function ArchitectureVisual() {
         </div>
       </div>
 
-      {/* CometChat Foundation */}
+      {/* ChatX Foundation */}
       <div className="bg-gradient-to-br from-gray-900/80 to-gray-950/80 border border-gray-800 rounded-2xl p-6">
-        <h3 className="text-white font-semibold mb-4">CometChat Foundation</h3>
+        <h3 className="text-white font-semibold mb-4">ChatX Foundation</h3>
         <div className="grid grid-cols-3 gap-3">
           {['Flexible Integrations', 'Cross-Platform Support', 'Compliant & Scalable'].map((cap, idx) => (
             <div key={idx} className="text-center">

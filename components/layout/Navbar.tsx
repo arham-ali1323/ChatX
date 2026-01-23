@@ -312,7 +312,7 @@ export default function Navbar() {
               <div className="text-blue-500 font-semibold mb-3">Developers</div>
               <div className="space-y-3 pl-4">
                 <Link
-                  href="/documentation"
+                  href="/Dev-Docs"
                   className="flex items-center gap-3 text-gray-300 hover:text-blue-500 transition py-2"
                   onClick={() => setOpen(false)}
                 >
