@@ -1,6 +1,7 @@
 "use client";
-import React from "react";
-import Head from "next/head";
+
+import Image from "next/image";
+import { motion } from "framer-motion";
 import {
   Hexagon,
   Sparkles,
@@ -13,6 +14,26 @@ import {
   Users,
   CheckCircle2,
 } from "lucide-react";
+
+const securityBadges = [
+  {
+    label: "SOC 2 Type II",
+    image: "/images/security/soc2.png"
+  },
+  {
+    label: "ISO 27001",
+    image: "/images/security/iso27001.png"
+  },
+  {
+    label: "GDPR Compliant",
+    image: "/images/security/gdpr.png"
+  },
+  {
+    label: "HIPAA Ready",
+    image: "/images/security/hipaa.png"
+  }
+];
+
 export default function EnterpriseSecurity() {
   return (
     <>
@@ -65,27 +86,36 @@ export default function EnterpriseSecurity() {
               </div>
             </div>
 
-            {/* Compliance Badge Grid */}
-            <div className="md:col-span-4 p-12  bg-gradient-to-b from-gray-950 via-indigo-950/10 to-gray-950">
-              <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-12">
-                Enterprise security
-              </h4>
-              <div className="grid grid-cols-2 gap-8">
-                {[
-                  { label: "AICPA SOC", icon: <ShieldCheck />, color: "blue" },
-                  { label: "GDPR", icon: <CheckCircle2 />, color: "blue" },
-                  { label: "HIPAA", icon: <ShieldCheck />, color: "blue" },
-                  { label: "ISO 27001", icon: <CheckCircle2 />, color: "blue" }
-                ].map((badge, i) => (
-                  <div
-                    key={i}
-                    className="aspect-square rounded-full border border-slate-700 bg-slate-800/50 flex flex-col items-center justify-center gap-2 group hover:bg-slate-700/50 transition-all duration-300 hover:scale-105"
+            {/* Security Badges */}
+            <div className="md:col-span-4 p-12">
+              <h4 className="text-xl font-bold mb-8 text-white">Security certifications</h4>
+              <div className="grid grid-cols-2 gap-6">
+                {securityBadges.map((badge, index) => (
+                  <motion.div
+                    key={badge.label}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.08 }}
+                    whileHover={{ scale: 1.05 }}
+                    className="flex flex-col items-center"
                   >
-                    <div className={`${badge.color === "blue" ? "text-blue-400 group-hover:text-blue-300" : badge.color === "blue" ? "text-blue-400 group-hover:text-blue-300" : badge.color === "blue" ? "text-blue-400 group-hover:text-blue-300" : "text-orange-400 group-hover:text-orange-300"} transition-colors`}>
-                      {React.cloneElement(badge.icon as React.ReactElement<any>, { width: 32, height: 32, strokeWidth: 1 })}
+                    <div className="relative w-20 h-20 flex items-center justify-center mb-3">
+                      <div className="absolute inset-0 rounded-full bg-white/5 blur-xl" />
+                      <div className="relative w-16 h-16 rounded-full bg-gradient-to-b from-slate-800 to-slate-900 border border-white/10 flex items-center justify-center shadow-xl">
+                        <Image
+                          src={badge.image}
+                          alt={badge.label}
+                          width={32}
+                          height={32}
+                          className="object-contain opacity-90"
+                        />
+                      </div>
                     </div>
-                    <span className="text-[9px] font-bold text-slate-400">{badge.label}</span>
-                  </div>
+                    <span className="text-xs font-medium text-slate-300 text-center">
+                      {badge.label}
+                    </span>
+                  </motion.div>
                 ))}
               </div>
             </div>
