@@ -142,11 +142,12 @@ export default function Navbar() {
               
               {/* Dropdown Menu */}
               <div
-                className={`absolute top-full left-0 mt-2 w-80 bg-black/95 backdrop-blur border border-gray-800 rounded-lg shadow-xl transition-all duration-200 ${
+                className={`absolute top-full left-0 mt-2 w-96 bg-black/95 backdrop-blur border border-gray-800 rounded-lg shadow-xl transition-all duration-200 ${
                   developersDropdown ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
                 }`}
               >
                 <div className="p-2">
+                  <div className="grid grid-cols-2 gap-2">
                   {/* Documentation */}
                   <Link
                     href="/documentation"
@@ -230,6 +231,7 @@ export default function Navbar() {
                       <p className="text-gray-400 text-xs">Found a bug? We're on it</p>
                     </div>
                   </Link>
+                  </div>
                 </div>
               </div>
             </div>

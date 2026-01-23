@@ -112,7 +112,7 @@ function IntegrationCard({
       onMouseLeave={onLeave}
       className={`relative rounded-2xl p-8 border backdrop-blur-sm transition-all duration-300
         bg-gradient-to-br from-gray-900/50 to-gray-950/50 border-gray-800
-        ${isHovered ? "-translate-y-2 shadow-xl shadow-purple-500/10 border-purple-500/40" : ""}
+        ${isHovered ? "-translate-y-2 shadow-xl shadow-blue-500/10 border-blue-500/40" : ""}
       `}
     >
       {/* Icon */}
@@ -120,7 +120,7 @@ function IntegrationCard({
         className={`w-16 h-16 rounded-xl flex items-center justify-center mb-6 transition-all
           ${
             isHovered
-              ? "bg-purple-500/20 text-purple-400 scale-110"
+              ? "bg-blue-500/20 text-blue-400 scale-110"
               : "bg-gray-800 text-gray-400"
           }
         `}
@@ -146,7 +146,7 @@ function IntegrationCard({
       >
         {method.features.map((feature, idx) => (
           <li key={idx} className="flex gap-2 text-sm text-gray-300">
-            <span className="text-purple-400">+</span>
+            <span className="text-blue-400">+</span>
             {feature}
           </li>
         ))}
@@ -155,7 +155,7 @@ function IntegrationCard({
       {/* CTA */}
       <button
         className={`mt-6 text-sm font-semibold flex items-center gap-2 transition
-          ${isHovered ? "text-purple-400" : "text-gray-500"}
+          ${isHovered ? "text-blue-400" : "text-gray-500"}
         `}
       >
         Learn more
