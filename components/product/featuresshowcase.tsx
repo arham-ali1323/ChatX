@@ -70,7 +70,7 @@ export default function FeaturesShowcase() {
       {/* Background Effects */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-1/4 left-1/3 w-96 h-96 bg-indigo-500/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 right-1/3 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 right-1/3 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -88,7 +88,7 @@ export default function FeaturesShowcase() {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             In-app messaging and calling
             <br />
-            <span className="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-indigo-400 via-blue-400 to-pink-400 bg-clip-text text-transparent">
               functions elevated.
             </span>
           </h2>
@@ -173,7 +173,7 @@ export default function FeaturesShowcase() {
                   className={`
                     group cursor-pointer bg-slate-900/50 backdrop-blur-sm border rounded-2xl p-6 transition-all duration-300
                     ${activeFeature === index 
-                      ? 'border-indigo-500/50 bg-gradient-to-br from-indigo-500/10 to-purple-500/10' 
+                      ? 'border-indigo-500/50 bg-gradient-to-br from-indigo-500/10 to-blue-500/10' 
                       : 'border-slate-800 hover:border-slate-700'
                     }
                   `}

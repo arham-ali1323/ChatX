@@ -9,7 +9,7 @@ import CoreProduct from '@/components/home/Core-Product';
 import ClientMarquee from '@/components/home/ClientMarquee';
 const page = () => {  
   return (
-    <div className="bg-black min-h-screen">
+    <div>
       <Hero />
       <ClientMarquee />
       <ChatInterface />

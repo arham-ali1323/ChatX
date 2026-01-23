@@ -64,7 +64,7 @@ export default function ChatIntegrationMethods() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="text-purple-400 text-sm font-semibold uppercase tracking-wider">
+          <span className="text-blue-400 text-sm font-semibold uppercase tracking-wider">
             Integrating In-App Chat
           </span>
 

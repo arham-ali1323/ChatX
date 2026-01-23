@@ -31,7 +31,7 @@ export default function ChatIntegrationMethods() {
         'Deploy and launch your in-app chat'
       ],
       description: 'The fastest way to add chat with zero coding required.',
-      color: 'purple'
+      color: 'blue'
     },
     {
       id: 'ui-kit',
@@ -60,7 +60,7 @@ export default function ChatIntegrationMethods() {
     <section className="relative min-h-screen bg-gradient-to-b from-gray-950 via-indigo-950/10 to-gray-950 py-20 overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-purple-600 opacity-10 blur-3xl rounded-full"></div>
+        <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-blue-600 opacity-10 blur-3xl rounded-full"></div>
         <div className="absolute bottom-1/3 right-1/4 w-96 h-96 bg-blue-600 opacity-10 blur-3xl rounded-full"></div>
       </div>
 
@@ -68,7 +68,7 @@ export default function ChatIntegrationMethods() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-block mb-6">
-            <span className="text-purple-400 text-sm font-semibold tracking-wider uppercase">
+            <span className="text-blue-400 text-sm font-semibold tracking-wider uppercase">
               Integrating In-App Chat
             </span>
           </div>
@@ -86,14 +86,14 @@ export default function ChatIntegrationMethods() {
         {/* Timeline */}
         <div className="relative">
           {/* Connection Line */}
-          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-purple-500/30 to-transparent hidden lg:block"></div>
+          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500/30 to-transparent hidden lg:block"></div>
           
           {/* Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
             {integrationMethods.map((method, index) => (
               <div key={method.id} className="relative">
                 {/* Connection Dot */}
-                <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-gray-800 border-2 border-purple-500 rounded-full hidden lg:block z-10"></div>
+                <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-gray-800 border-2 border-blue-500 rounded-full hidden lg:block z-10"></div>
                 
                 <IntegrationCard
                   method={method}
@@ -124,11 +124,11 @@ function IntegrationCard({ method, isHovered, onHover, onLeave }: IntegrationCar
       <div
         className={`h-full bg-gradient-to-br backdrop-blur-sm border rounded-2xl p-8 transition-all duration-300 ${
           isWidget
-            ? 'from-purple-900/30 to-purple-950/30 border-purple-500/50'
+            ? 'from-blue-900/30 to-blue-950/30 border-blue-500/50'
             : 'from-gray-900/50 to-gray-950/50 border-gray-800'
         } ${
           isHovered && !isWidget
-            ? 'border-purple-500/30 shadow-xl shadow-purple-500/10'
+            ? 'border-blue-500/30 shadow-xl shadow-blue-500/10'
             : ''
         }`}
       >
@@ -136,7 +136,7 @@ function IntegrationCard({ method, isHovered, onHover, onLeave }: IntegrationCar
         <div
           className={`inline-flex items-center justify-center w-16 h-16 rounded-xl mb-6 transition-all duration-300 ${
             isWidget
-              ? 'bg-purple-500/20 text-purple-400'
+              ? 'bg-blue-500/20 text-blue-400'
               : isHovered
               ? 'bg-gray-700 text-gray-300 scale-110'
               : 'bg-gray-800 text-gray-400'
@@ -159,7 +159,7 @@ function IntegrationCard({ method, isHovered, onHover, onLeave }: IntegrationCar
           <ul className="space-y-3 mb-6">
             {method.features.map((feature, idx) => (
               <li key={idx} className="flex items-start gap-3 text-gray-300">
-                <span className="text-purple-400 text-lg flex-shrink-0 mt-0.5">+</span>
+                <span className="text-blue-400 text-lg flex-shrink-0 mt-0.5">+</span>
                 <span className="text-sm leading-relaxed">{feature}</span>
               </li>
             ))}
@@ -173,7 +173,7 @@ function IntegrationCard({ method, isHovered, onHover, onLeave }: IntegrationCar
         {/* Learn More Link */}
         <button
           className={`text-sm font-semibold flex items-center gap-2 transition-all duration-300 ${
-            isWidget || isHovered ? 'text-purple-400' : 'text-gray-500'
+            isWidget || isHovered ? 'text-blue-400' : 'text-gray-500'
           }`}
         >
           Learn more
@@ -198,8 +198,8 @@ function IntegrationCard({ method, isHovered, onHover, onLeave }: IntegrationCar
       {/* Hover Glow */}
       {!isWidget && (
         <div
-          className={`absolute inset-0 rounded-2xl bg-gradient-to-br from-purple-500/0 to-blue-500/0 transition-all duration-300 pointer-events-none ${
-            isHovered ? 'from-purple-500/5 to-blue-500/5' : ''
+          className={`absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-500/0 to-blue-500/0 transition-all duration-300 pointer-events-none ${
+            isHovered ? 'from-blue-500/5 to-blue-500/5' : ''
           }`}
         ></div>
       )}

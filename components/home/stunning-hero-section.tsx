@@ -5,7 +5,7 @@ import { MessageSquare, ArrowRight, Sparkles } from 'lucide-react';
 
 export default function StunningHeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-slate-950 via-indigo-950 to-slate-950">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Animated Background Gradient */}
       <div className="absolute inset-0">
         {/* Large Radial Gradient */}

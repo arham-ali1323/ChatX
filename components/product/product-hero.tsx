@@ -20,10 +20,10 @@ export default function RealtimeCommunicationHero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-b from-gray-950 via-indigo-950/20 to-gray-950 overflow-hidden">
+    <section className="relative min-h-screen overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-600 opacity-10 blur-3xl rounded-full"></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600 opacity-10 blur-3xl rounded-full"></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-600 opacity-10 blur-3xl rounded-full"></div>
       </div>
 
@@ -41,7 +41,7 @@ export default function RealtimeCommunicationHero() {
             {/* Heading */}
             <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
               Connect your users,<br />
-              with <span className="text-purple-400">in-app messaging</span> and calling, effortlessly
+              with <span className="text-blue-400">in-app messaging</span> and calling, effortlessly
             </h1>
 
             {/* Description */}
@@ -56,7 +56,7 @@ export default function RealtimeCommunicationHero() {
 
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-4">
-              <button className="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-8 py-4 rounded-lg transition-all transform hover:scale-105">
+              <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-lg transition-all transform hover:scale-105">
                 Schedule a demo
               </button>
               <button className="bg-transparent hover:bg-gray-900 text-white font-semibold px-8 py-4 rounded-lg border border-gray-700 hover:border-gray-600 transition-all">
@@ -71,7 +71,7 @@ export default function RealtimeCommunicationHero() {
             <div className="bg-gradient-to-br from-gray-900/90 to-gray-950/90 backdrop-blur-sm border border-gray-800 rounded-2xl p-6 mb-6 shadow-2xl">
               {/* Chat Header */}
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 bg-purple-500 rounded-full"></div>
+                <div className="w-10 h-10 bg-blue-500 rounded-full"></div>
                 <div>
                   <div className="text-white font-semibold">Innovative Online Shopping</div>
                   <div className="text-gray-500 text-xs">by Laura Doe</div>
@@ -91,7 +91,7 @@ export default function RealtimeCommunicationHero() {
                       <div className="flex items-start gap-2">
                         <div className="w-8 h-8 bg-gray-700 rounded-full flex-shrink-0"></div>
                         <div>
-                          <div className="bg-purple-600 text-white px-4 py-2 rounded-2xl rounded-tl-none max-w-xs">
+                          <div className="bg-blue-600 text-white px-4 py-2 rounded-2xl rounded-tl-none max-w-xs">
                             {msg.text}
                           </div>
                           <div className="text-xs text-gray-500 mt-1">{msg.time}</div>
@@ -159,7 +159,7 @@ export default function RealtimeCommunicationHero() {
                   </div>
                   <div className="absolute top-2 right-2 bg-green-500 w-3 h-3 rounded-full"></div>
                 </div>
-                <div className="relative aspect-video bg-gradient-to-br from-purple-900 to-purple-950 rounded-xl overflow-hidden">
+                <div className="relative aspect-video bg-gradient-to-br from-blue-900 to-blue-950 rounded-xl overflow-hidden">
                   <img
                     src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop"
                     alt="John Paul"

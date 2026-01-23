@@ -15,9 +15,9 @@ import {
 } from "lucide-react";
 export default function EnterpriseSecurity() {
   return (
-          <main className="mx-auto px-6 py-10">
+    <>
         {/* --- ENTERPRISE SECURITY SECTION --- */}
-        <section className="relative pt-24">
+       <section className="relative min-h-screen bg-gradient-to-b from-gray-950 via-indigo-950/10 to-gray-950 py-20 px-8">
           <div className="text-center mb-20">
             <p className="text-blue-400 font-bold text-xs tracking-widest uppercase mb-4">
               Enterprise-Grade Security
@@ -31,7 +31,7 @@ export default function EnterpriseSecurity() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-0 border border-white/10 rounded-[2.5rem] overflow-hidden bg-[#0A0A0B]">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-0 border border-white/10 rounded-[2.5rem] overflow-hidden  bg-gradient-to-b from-gray-950 via-indigo-950/10 to-gray-950">
             {/* Edge Network */}
             <div className="md:col-span-5 p-12 border-r border-b md:border-b-0 border-white/10 relative overflow-hidden group">
               <div className="mb-24 flex justify-center">
@@ -66,7 +66,7 @@ export default function EnterpriseSecurity() {
             </div>
 
             {/* Compliance Badge Grid */}
-            <div className="md:col-span-4 p-12 bg-[#0C0C0E]">
+            <div className="md:col-span-4 p-12  bg-gradient-to-b from-gray-950 via-indigo-950/10 to-gray-950">
               <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-12">
                 Enterprise security
               </h4>
@@ -81,7 +81,7 @@ export default function EnterpriseSecurity() {
                     key={i}
                     className="aspect-square rounded-full border border-slate-700 bg-slate-800/50 flex flex-col items-center justify-center gap-2 group hover:bg-slate-700/50 transition-all duration-300 hover:scale-105"
                   >
-                    <div className={`${badge.color === "blue" ? "text-blue-400 group-hover:text-blue-300" : badge.color === "blue" ? "text-blue-400 group-hover:text-blue-300" : badge.color === "purple" ? "text-purple-400 group-hover:text-purple-300" : "text-orange-400 group-hover:text-orange-300"} transition-colors`}>
+                    <div className={`${badge.color === "blue" ? "text-blue-400 group-hover:text-blue-300" : badge.color === "blue" ? "text-blue-400 group-hover:text-blue-300" : badge.color === "blue" ? "text-blue-400 group-hover:text-blue-300" : "text-orange-400 group-hover:text-orange-300"} transition-colors`}>
                       {React.cloneElement(badge.icon as React.ReactElement<any>, { width: 32, height: 32, strokeWidth: 1 })}
                     </div>
                     <span className="text-[9px] font-bold text-slate-400">{badge.label}</span>
@@ -91,6 +91,6 @@ export default function EnterpriseSecurity() {
             </div>
           </div>
         </section>
-      </main>
+        </>
   );
 }

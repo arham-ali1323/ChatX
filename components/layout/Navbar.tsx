@@ -118,8 +118,8 @@ export default function Navbar() {
                     href="/chat-messaging"
                     className="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-800/50 transition group"
                   >
-                    <div className="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <MessageCircle className="w-5 h-5 text-purple-400" />
+                    <div className="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <MessageCircle className="w-5 h-5 text-blue-400" />
                     </div>
                     <div className="flex-1">
                       <h4 className="text-white font-semibold text-sm mb-1">Chat & Messaging</h4>
@@ -142,7 +142,7 @@ export default function Navbar() {
               
               {/* Dropdown Menu */}
               <div
-                className={`absolute top-full left-0 mt-2 w-96 bg-black/95 backdrop-blur border border-gray-800 rounded-lg shadow-xl transition-all duration-200 ${
+                className={`absolute top-full left-0 mt-2 w-140 bg-black/95 backdrop-blur border border-gray-800 rounded-lg shadow-xl transition-all duration-200 ${
                   developersDropdown ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
                 }`}
               >
@@ -209,8 +209,8 @@ export default function Navbar() {
                     href="/office-hours"
                     className="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-800/50 transition group"
                   >
-                    <div className="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center shrink-0">
-                      <MessageCircle className="w-5 h-5 text-purple-400" />
+                    <div className="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center shrink-0">
+                      <MessageCircle className="w-5 h-5 text-blue-400" />
                     </div>
                     <div className="flex-1">
                       <h4 className="text-white font-semibold text-sm mb-1">Office Hours</h4>
