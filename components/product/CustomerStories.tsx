@@ -1,76 +1,161 @@
 "use client";
+import { useState } from 'react';
 
-import useEmblaCarousel from "embla-carousel-react";
-import Autoplay from "embla-carousel-autoplay";
-import { Building2, CreditCard, ShoppingCart, Users } from "lucide-react";
-
-const brands = [
-  {
-    name: "PANGEA",
-    icon: Building2,
-    desc: "Automating payments and compliance. Pangea AI uses ChatX to streamline workflows.",
-  },
-  {
-    name: "randstad",
-    icon: Users,
-    desc: "Randstad uses ChatX to enhance internal communication with AI-powered assistance.",
-  },
-  {
-    name: "Stripe",
-    icon: CreditCard,
-    desc: "Stripe improves developer productivity using ChatX across teams.",
-  },
-  {
-    name: "Shopify",
-    icon: ShoppingCart,
-    desc: "Shopify leverages ChatX to scale customer support and operations.",
-  },
-];
-
-export default function FeaturedStories() {
-  const [emblaRef] = useEmblaCarousel(
+export default function CaseStudyShowcase() {
+  const caseStudies = [
     {
-      loop: true,
-      align: "start",
-      skipSnaps: false,
+      id: 1,
+      logo: 'Bitdefender',
+      logoSubtext: '®',
+      title: 'How Bitdefender and CometChat Deliver AI-Powered Scam Protection',
+      description: 'Discover how CometChat powers Bitdefender\'s Scamio, delivering real-time AI scam protection at massive scale.',
+      industry: 'Cybersecurity',
+      gradient: 'from-gray-800 to-indigo-900'
     },
-    [Autoplay({ delay: 3000 })]
-  );
+    {
+      id: 2,
+      logo: 'HealthTech',
+      logoSubtext: '',
+      title: 'Transforming Patient Care with Real-Time Communication',
+      description: 'Learn how HealthTech integrated CometChat to enable seamless doctor-patient consultations across their telemedicine platform.',
+      industry: 'Healthcare',
+      gradient: 'from-gray-800 to-blue-900'
+    },
+    {
+      id: 3,
+      logo: 'EduConnect',
+      logoSubtext: '',
+      title: 'Scaling Educational Communication to 10M+ Students',
+      description: 'Explore how EduConnect leverages CometChat to power virtual classrooms and student collaboration worldwide.',
+      industry: 'Education',
+      gradient: 'from-gray-800 to-purple-900'
+    }
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextSlide = () => {
+    setCurrentIndex((prev) => (prev + 1) % caseStudies.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prev) => (prev - 1 + caseStudies.length) % caseStudies.length);
+  };
+
+  const currentStudy = caseStudies[currentIndex];
 
   return (
-    <section className="bg-gradient-to-b from-[#0b0c14] to-[#06070d] py-16">
-      <div className="mx-auto max-w-7xl px-6">
-        <h2 className="mb-10 text-3xl md:text-5xl lg:text-6xl font-medium text-gray-300">Featured
-          <span className="mx-auto max-w-4xl text-3xl md:text-5xl lg:text-6xl font-bold bg-linear-to-r from-[#2009cb] via-[#C7BEF9] to-[#2009cb] bg-clip-text text-transparent drop-shadow-[0_0_20px_rgba(216,210,244,0.35)]"> customer stories</span>
-        </h2>
+    <section className="relative min-h-screen bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 py-20 overflow-hidden flex items-center">
+      {/* Background Effects */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-indigo-600 opacity-10 blur-3xl rounded-full"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600 opacity-10 blur-3xl rounded-full"></div>
+      </div>
 
-        <div ref={emblaRef} className="overflow-hidden">
-          <div className="flex gap-6 px-6">
-            {brands.map((brand, i) => {
-              const Icon = brand.icon;
-              return (
-                <div
-                  key={i}
-                  className="flex-shrink-0 w-[66.666%] sm:w-[50%] md:w-[50%] lg:w-[40%]"
-                >
-                  <div className="h-full rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur transition hover:bg-white/10">
-                    <div className="mb-4 flex items-center justify-center w-16 h-16 rounded-lg bg-white/10">
-                      <Icon className="w-8 h-8 text-white" />
-                    </div>
-                    <h3 className="mb-4 text-xl font-semibold text-white">
-                      {brand.name}
-                    </h3>
-                    <p className="mb-6 text-sm leading-relaxed text-gray-400">
-                      {brand.desc}
-                    </p>
-                    <button className="rounded-md border border-white/20 px-4 py-2 text-sm text-white transition hover:bg-white hover:text-black">
-                      Read story
-                    </button>
-                  </div>
+      <div className="relative max-w-6xl mx-auto px-6 w-full">
+        {/* Case Study Card */}
+        <div className={`relative bg-gradient-to-br ${currentStudy.gradient} backdrop-blur-sm border border-gray-700/50 rounded-3xl p-12 shadow-2xl transition-all duration-500`}>
+          {/* Logo */}
+          <div className="mb-12">
+            <div className="inline-flex items-baseline gap-1">
+              <div className="flex items-center gap-3 bg-gray-700/30 px-6 py-3 rounded-xl">
+                <div className="w-12 h-12 bg-gray-600 rounded-lg flex items-center justify-center">
+                  <span className="text-white font-bold text-xl">
+                    {currentStudy.logo.charAt(0)}
+                  </span>
                 </div>
-              );
-            })}
+                <span className="text-3xl md:text-4xl font-semibold text-gray-200">
+                  {currentStudy.logo}
+                </span>
+                {currentStudy.logoSubtext && (
+                  <span className="text-sm text-gray-400 align-super">
+                    {currentStudy.logoSubtext}
+                  </span>
+                )}
+              </div>
+            </div>
           </div>
+
+          {/* Content */}
+          <div className="max-w-2xl space-y-6">
+            {/* Title */}
+            <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
+              {currentStudy.title}
+            </h2>
+
+            {/* Description */}
+            <p className="text-gray-300 text-lg leading-relaxed">
+              {currentStudy.description}
+            </p>
+
+            {/* CTA Button */}
+            <div className="pt-4">
+              <button className="bg-transparent hover:bg-white/10 text-white font-semibold px-8 py-3 rounded-full border-2 border-gray-600 hover:border-gray-500 transition-all duration-300">
+                Read More
+              </button>
+            </div>
+          </div>
+
+          {/* Navigation Arrows */}
+          <div className="absolute bottom-8 right-8 flex items-center gap-4">
+            <button
+              onClick={prevSlide}
+              className="w-12 h-12 bg-gray-700/50 hover:bg-gray-600/50 rounded-full flex items-center justify-center transition-all group"
+              aria-label="Previous case study"
+            >
+              <svg
+                className="w-6 h-6 text-gray-300 group-hover:text-white transition"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
+            <button
+              onClick={nextSlide}
+              className="w-12 h-12 bg-gray-700/50 hover:bg-gray-600/50 rounded-full flex items-center justify-center transition-all group"
+              aria-label="Next case study"
+            >
+              <svg
+                className="w-6 h-6 text-gray-300 group-hover:text-white transition"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          </div>
+
+          {/* Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-black/20 rounded-3xl pointer-events-none"></div>
+        </div>
+
+        {/* Dots Indicator */}
+        <div className="flex justify-center gap-3 mt-8">
+          {caseStudies.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentIndex(index)}
+              className={`transition-all duration-300 ${
+                index === currentIndex
+                  ? 'w-8 h-3 bg-purple-500 rounded-full'
+                  : 'w-3 h-3 bg-gray-600 hover:bg-gray-500 rounded-full'
+              }`}
+              aria-label={`Go to case study ${index + 1}`}
+            />
+          ))}
         </div>
       </div>
     </section>
