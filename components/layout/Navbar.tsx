@@ -71,9 +71,9 @@ export default function Navbar() {
           <div className="text-blue-500 font-extrabold text-xl tracking-wide">
             <Link href="/">
               <Image
-                src="/images/logo.png"
+                src="/images/2.png"
                 alt="Chat-Logo"
-                width={60}
+                width={120}
                 height={60}
                 style={{ width: "auto", height: "auto" }}
               />
@@ -150,7 +150,7 @@ export default function Navbar() {
                   <div className="grid grid-cols-2 gap-2">
                   {/* Documentation */}
                   <Link
-                    href="/documentation"
+                    href="/Dev-Docs"
                     className="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-800/50 transition group"
                   >
                     <div className="w-10 h-10 bg-green-500/20 rounded-lg flex items-center justify-center shrink-0">

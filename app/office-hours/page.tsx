@@ -62,15 +62,15 @@ export default function ScheduleUI() {
 <div className="h-[80vh] overflow-y-auto p-10 border-r scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
   
   <img
-    src="https://www.cometchat.com/static/images/logo.svg"
-    alt="CometChat"
+    src="/images/1.png"
+    alt="ChatX"
     className="h-8 mb-8"
   />
 
-  <p className="text-sm text-gray-500 mb-2">CometChat</p>
+  <p className="text-sm text-gray-500 mb-2">ChatX</p>
 
   <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-    CometChat - Solutions<br />Engineering Office Hours
+    ChatX - Solutions<br />Engineering Office Hours
   </h2>
 
   <div className="flex items-center text-sm text-gray-600 mb-3">
@@ -196,7 +196,7 @@ export default function ScheduleUI() {
           <div className="mt-8 text-sm text-gray-600">
             <p className="font-medium mb-1">Time zone</p>
             <div className="flex items-center gap-2">
-              🌐 Pakistan, Maldives Time (2:59am)
+              🌐 Pakistan, Islamabad Time (4pm)
             </div>
           </div>
         </div>
