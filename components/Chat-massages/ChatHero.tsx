@@ -23,13 +23,13 @@ export function ChatHero() {
       {/* Bottom blue curve */}
       <div
         className="pointer-events-none absolute inset-x-0 bottom-0 h-48
-    bg-[radial-gradient(ellipse_at_bottom,rgba(168,85,247,0.25),transparent_70%)]"
+   bg-gradient-to-r from-blue-400 via-blue-500 to-indigo-600"
       />
       <div className="relative z-10">
         {/* Heading */}
         <h1
           className="mx-auto max-w-4xl text-3xl md:text-5xl lg:text-6xl font-bold 
-  bg-linear-to-r from-[#7c3aed] via-[#C7BEF9] to-[#7c3aed]
+   bg-gradient-to-r from-blue-400 via-blue-500 to-indigo-600
   bg-clip-text text-transparent
   drop-shadow-[0_0_20px_rgba(168,85,247,0.35)]"
         >
