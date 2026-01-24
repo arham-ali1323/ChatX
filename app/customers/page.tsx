@@ -1,6 +1,8 @@
 "use client";
 
 import CustomerStoriesGrid from '@/components/Customers/Customer-Stories-Grid';
+import ClientMarquee from '@/components/home/ClientMarquee';
+import StunningHeroSection from '@/components/home/stunning-hero-section'
 
 function Brand({ label, top, left }: { label: string; top: string; left: string }) {
   return (
@@ -64,7 +66,9 @@ export default function CustomersPage() {
           </div>
         </div>
       </section>
+      <ClientMarquee />
       <CustomerStoriesGrid />
+      <StunningHeroSection/>
     </>
   );
 }
