@@ -49,7 +49,7 @@ export default function CustomersPage() {
           <h2 className="text-4xl md:text-5xl font-semibold">
             The interaction engine
           </h2>
-          <p className="mt-3 text-3xl md:text-4xl bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+          <p className="mt-3 text-3xl md:text-4xl bg-gradient-to-r from-indigo-400 to-blue-400 bg-clip-text text-transparent">
             behind your favorite products
           </p>
         </div>
