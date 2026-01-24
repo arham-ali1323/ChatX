@@ -52,12 +52,12 @@ export default function InsightsSection() {
         
         {/* Left Content */}
         <div className="flex-1 z-10">
-          <div className="inline-block px-4 py-1.5 mb-6 rounded-full border border-purple-500/30 bg-purple-500/10">
-            <span className="text-purple-400 text-sm font-medium">Insights & Analytics</span>
+          <div className="inline-block px-4 py-1.5 mb-6 rounded-full border border-blue-500/30 bg-blue-500/10">
+            <span className="text-blue-400 text-sm font-medium">Insights & Analytics</span>
           </div>
           <h1 className="text-5xl lg:text-7xl font-bold text-white mb-6 tracking-tight">
             Turn every <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-400">
               conversation
             </span> into <br />
             actionable insights
@@ -88,7 +88,7 @@ export default function InsightsSection() {
              />
           </div>
           {/* Decorative Glow */}
-          <div className="absolute -top-20 -right-20 w-96 h-96 bg-purple-600/20 blur-[120px] rounded-full" />
+          <div className="absolute -top-20 -right-20 w-96 h-96 bg-blue-600/20 blur-[120px] rounded-full" />
         </div>
       </div>
     </section>
