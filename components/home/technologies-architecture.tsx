@@ -69,9 +69,9 @@ export default function TechnologiesShowcase() {
         </div>
 
         {/* Technologies Grid */}
-        <div className="relative flex items-center justify-center gap-6">
-          {/* Connecting Lines SVG */}
-          <svg className="absolute inset-0 w-full h-full pointer-events-none" style={{ zIndex: 0 }}>
+        <div className="relative flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-6">
+          {/* Connecting Lines SVG - Hidden on mobile */}
+          <svg className="absolute inset-0 w-full h-full pointer-events-none hidden lg:block" style={{ zIndex: 0 }}>
             {/* Horizontal connections between columns */}
             {/* Row 1 connections */}
             <line x1="25%" y1="20%" x2="40%" y2="20%" stroke="rgba(59, 130, 246, 0.2)" strokeWidth="1" />
@@ -103,68 +103,98 @@ export default function TechnologiesShowcase() {
             <line x1="75%" y1="80%" x2="50%" y2="50%" stroke="rgba(147, 51, 234, 0.15)" strokeWidth="1" />
           </svg>
 
-          {/* Left Column */}
-          <div className="relative flex flex-col gap-6" style={{ zIndex: 1 }}>
-            {technologies[0].map((tech) => (
-              <TechCard
-                key={tech.id}
-                tech={tech}
-                isHovered={hoveredTech === tech.id}
-                onHover={() => setHoveredTech(tech.id)}
-                onLeave={() => setHoveredTech(null)}
-              />
-            ))}
-          </div>
-
-          {/* Center-Left Column */}
-          <div className="relative flex flex-col gap-6" style={{ zIndex: 1 }}>
-            {technologies[1].map((tech) => (
-              <TechCard
-                key={tech.id}
-                tech={tech}
-                isHovered={hoveredTech === tech.id}
-                onHover={() => setHoveredTech(tech.id)}
-                onLeave={() => setHoveredTech(null)}
-              />
-            ))}
-          </div>
-
-          {/* Center Logo */}
-          <div className="relative mx-8" style={{ zIndex: 2 }}>
-            <div className="w-32 h-32 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 flex items-center justify-center shadow-2xl">
-              <div className="relative">
-                {/* Center Icon */}
-                <div className="relative bg-white text-gray-900 w-16 h-16 rounded-xl flex items-center justify-center text-3xl font-bold shadow-lg">
-                  X
+          {/* Mobile Layout - Stacked */}
+          <div className="lg:hidden flex flex-col items-center gap-8 w-full">
+            {/* Center Logo - Mobile */}
+            <div className="relative" style={{ zIndex: 2 }}>
+              <div className="w-24 h-24 sm:w-28 sm:h-28 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 flex items-center justify-center shadow-2xl">
+                <div className="relative">
+                  <div className="relative bg-white text-gray-900 w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center text-2xl sm:text-3xl font-bold shadow-lg">
+                    X
+                  </div>
                 </div>
               </div>
             </div>
+            
+            {/* Mobile Tech Grid */}
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 w-full max-w-md mx-auto">
+              {technologies.flat().map((tech) => (
+                <TechCard
+                  key={tech.id}
+                  tech={tech}
+                  isHovered={hoveredTech === tech.id}
+                  onHover={() => setHoveredTech(tech.id)}
+                  onLeave={() => setHoveredTech(null)}
+                />
+              ))}
+            </div>
           </div>
 
-          {/* Center-Right Column */}
-          <div className="relative flex flex-col gap-6" style={{ zIndex: 1 }}>
-            {technologies[2].map((tech) => (
-              <TechCard
-                key={tech.id}
-                tech={tech}
-                isHovered={hoveredTech === tech.id}
-                onHover={() => setHoveredTech(tech.id)}
-                onLeave={() => setHoveredTech(null)}
-              />
-            ))}
-          </div>
+          {/* Desktop Layout - Columns */}
+          <div className="hidden lg:flex items-center justify-center gap-6 w-full">
+            {/* Left Column */}
+            <div className="relative flex flex-col gap-6" style={{ zIndex: 1 }}>
+              {technologies[0].map((tech) => (
+                <TechCard
+                  key={tech.id}
+                  tech={tech}
+                  isHovered={hoveredTech === tech.id}
+                  onHover={() => setHoveredTech(tech.id)}
+                  onLeave={() => setHoveredTech(null)}
+                />
+              ))}
+            </div>
 
-          {/* Right Column */}
-          <div className="relative flex flex-col gap-6" style={{ zIndex: 1 }}>
-            {technologies[3].map((tech) => (
-              <TechCard
-                key={tech.id}
-                tech={tech}
-                isHovered={hoveredTech === tech.id}
-                onHover={() => setHoveredTech(tech.id)}
-                onLeave={() => setHoveredTech(null)}
-              />
-            ))}
+            {/* Center-Left Column */}
+            <div className="relative flex flex-col gap-6" style={{ zIndex: 1 }}>
+              {technologies[1].map((tech) => (
+                <TechCard
+                  key={tech.id}
+                  tech={tech}
+                  isHovered={hoveredTech === tech.id}
+                  onHover={() => setHoveredTech(tech.id)}
+                  onLeave={() => setHoveredTech(null)}
+                />
+              ))}
+            </div>
+
+            {/* Center Logo - Desktop */}
+            <div className="relative mx-8" style={{ zIndex: 2 }}>
+              <div className="w-32 h-32 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700 flex items-center justify-center shadow-2xl">
+                <div className="relative">
+                  {/* Center Icon */}
+                  <div className="relative bg-white text-gray-900 w-16 h-16 rounded-xl flex items-center justify-center text-3xl font-bold shadow-lg">
+                    X
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Center-Right Column */}
+            <div className="relative flex flex-col gap-6" style={{ zIndex: 1 }}>
+              {technologies[2].map((tech) => (
+                <TechCard
+                  key={tech.id}
+                  tech={tech}
+                  isHovered={hoveredTech === tech.id}
+                  onHover={() => setHoveredTech(tech.id)}
+                  onLeave={() => setHoveredTech(null)}
+                />
+              ))}
+            </div>
+
+            {/* Right Column */}
+            <div className="relative flex flex-col gap-6" style={{ zIndex: 1 }}>
+              {technologies[3].map((tech) => (
+                <TechCard
+                  key={tech.id}
+                  tech={tech}
+                  isHovered={hoveredTech === tech.id}
+                  onHover={() => setHoveredTech(tech.id)}
+                  onLeave={() => setHoveredTech(null)}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -186,7 +216,7 @@ function TechCard({ tech, isHovered, onHover, onLeave }: TechCardProps) {
     <div
       onMouseEnter={onHover}
       onMouseLeave={onLeave}
-      className={`group relative w-32 h-16 bg-gradient-to-br from-gray-900/80 to-gray-950/80 backdrop-blur-sm border rounded-lg flex items-center justify-center gap-3 px-4 transition-all duration-300 cursor-pointer ${
+      className={`group relative w-full sm:w-32 h-16 bg-gradient-to-br from-gray-900/80 to-gray-950/80 backdrop-blur-sm border rounded-lg flex items-center justify-center gap-2 sm:gap-3 px-3 sm:px-4 transition-all duration-300 cursor-pointer ${
         isHovered 
           ? 'border-blue-500 shadow-lg shadow-blue-500/20 scale-105' 
           : 'border-gray-800 hover:border-gray-700'
@@ -196,13 +226,13 @@ function TechCard({ tech, isHovered, onHover, onLeave }: TechCardProps) {
       <div className={`transition-transform duration-300 ${
         isHovered ? 'scale-110' : ''
       }`}>
-        <Icon className={`w-6 h-6 ${
+        <Icon className={`w-5 h-5 sm:w-6 sm:h-6 ${
           isHovered ? 'text-white' : 'text-gray-400'
         }`} />
       </div>
 
       {/* Text */}
-      <div className={`text-sm font-medium transition-colors duration-300 ${
+      <div className={`text-xs sm:text-sm font-medium transition-colors duration-300 ${
         isHovered ? 'text-white' : 'text-gray-400'
       }`}>
         {tech.name}
