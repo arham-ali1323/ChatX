@@ -15,7 +15,7 @@ export function ChatHero() {
       <div className="pointer-events-none absolute inset-0 flex justify-center">
         <div
           className="absolute -top-48 h-[520px] w-[1000px] rounded-full
-      bg-[radial-gradient(ellipse_at_center,rgba(168,85,247,0.35),transparent_70%)]
+       bg-gradient-to-r from-blue-400 via-blue-500 to-indigo-600
       blur-3xl"
         />
       </div>
