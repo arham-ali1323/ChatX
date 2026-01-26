@@ -1,15 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import React from 'react';
-import { motion } from 'framer-motion';
-import { MessageSquare, Phone, Video, Shield, BarChart3, Bell, Building2 } from 'lucide-react';
 
 export function Hero() {
   return (
     <section
       className="relative mx-auto px-4 py-32 text-center overflow-hidden
-  bg-[#070B1A]"
+  bg-[#070b1a98]"
     >
       {/* Blue main glow */}
       <div className="pointer-events-none absolute inset-0 flex justify-center">

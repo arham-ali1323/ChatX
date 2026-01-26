@@ -62,7 +62,10 @@ export default function Navbar() {
   return (
     <header
       className="w-full relative z-50"
-      style={{ backgroundColor: "#0a0914" }}
+      style={{
+        background:
+          "radial-gradient(ellipse_at_center,rgba(56,189,248,0.35),transparent_70%) blur-3xl",
+      }}
     >
       {/* ================= MAIN NAV ================= */}
       <div className="backdrop-blur">
@@ -256,13 +259,13 @@ export default function Navbar() {
           <div className="flex items-center gap-4">
             <Link
               href="/login"
-              className="hidden lg:block px-6 py-3 text-sm font-bold text-white uppercase hover:bg-blue-400 transition"
+              className="hidden lg:block px-6 py-3 text-sm rounded-4xl font-bold text-white uppercase hover:bg-[#2009cb] transition"
             >
               Log in
             </Link>
             <Link
               href="/login"
-              className="hidden lg:block bg-primary px-6 py-3 text-sm font-bold text-white uppercase hover:bg-blue-400 transition"
+              className="hidden lg:block bg-primary rounded-4xl px-6 py-3 text-sm font-bold text-white uppercase hover:bg-[#2009cb] transition"
             >
               Schedule Demo
             </Link>
