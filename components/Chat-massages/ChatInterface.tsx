@@ -37,7 +37,7 @@ export default function ChatInterface() {
           transition={{ duration: 8, repeat: Infinity }}
         />
         <motion.div
-          className="absolute bottom-1/4 -right-1/4 w-96 h-96 bg-pink-600/20 rounded-full blur-3xl"
+          className="absolute bottom-1/4 -right-1/4 w-96 h-96 bg-slate-600/20 rounded-full blur-3xl"
           animate={{
             scale: [1.2, 1, 1.2],
             opacity: [0.5, 0.3, 0.5],
@@ -56,7 +56,7 @@ export default function ChatInterface() {
           >
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
               The complete platform for every{' '}
-              <span className="bg-gradient-to-r from-blue-600 to-pink-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-600 to-slate-400 bg-clip-text text-transparent">
                 message
               </span>
             </h1>
@@ -69,14 +69,14 @@ export default function ChatInterface() {
 
             <div className="flex flex-wrap gap-4">
               <motion.button
-                className="px-8 py-4 bg-gradient-to-r from-blue-600 to-pink-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-blue-500/50 transition-all"
+                className="px-8 py-4 bg-blue-600  text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-blue-500/50 transition-all"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 Start Messaging Free
               </motion.button>
               <motion.button
-                className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-xl border border-white/20 hover:bg-white/20 transition-all"
+                className="px-8 py-4 bg-gray-800/10 backdrop-blur-sm text-white font-semibold rounded-xl border border-white/20 hover:bg-white/20 transition-all"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -125,7 +125,7 @@ export default function ChatInterface() {
               >
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 bg-slate-700/50 rounded-lg flex items-center justify-center">
-                    <Reply className="w-5 h-5 text-pink-400" />
+                    <Reply className="w-5 h-5 text-slate-400" />
                   </div>
                   <p className="text-xs text-slate-400">Smart Reply System</p>
                 </div>
@@ -135,13 +135,13 @@ export default function ChatInterface() {
 
             {/* Center - ChatX Messaging Core */}
             <motion.div
-              className="bg-gradient-to-br from-blue-600/20 via-slate-800/50 to-pink-900/30 backdrop-blur-xl rounded-3xl p-8 border border-blue-500/30 mb-8 relative overflow-hidden"
+              className="bg-gradient-to-br from-blue-600/20 via-slate-800/50 backdrop-blur-xl rounded-3xl p-8 border border-blue-500/30 mb-8 relative overflow-hidden"
               initial={{ scale: 0.9 }}
               animate={{ scale: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
               <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-pink-600/10"
+                className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-slate-600/10"
                 animate={{
                   opacity: [0.5, 0.8, 0.5],
                 }}
@@ -274,7 +274,7 @@ export default function ChatInterface() {
           ].map((stat, i) => (
             <div key={i} className="text-center">
               <motion.h3
-                className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-pink-400 bg-clip-text text-transparent mb-2"
+                className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-slate-400 bg-clip-text text-transparent mb-2"
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ delay: 1 + i * 0.1, type: 'spring' }}
