@@ -18,6 +18,12 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "ChatX",
   description: "ChatX is a chat application that allows you to chat with your friends and family.",
+  icons: {
+    icon: "/images/favicon-32.png",
+    shortcut: "/images/favicon-32.png",
+    apple: "/images/2.png",
+  },
+  manifest: "/manifest.json",
 };
 
 export default function RootLayout({

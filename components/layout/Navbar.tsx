@@ -165,34 +165,6 @@ export default function Navbar() {
                     </div>
                   </Link>
                   
-                  {/* Feature Requests */}
-                  <Link
-                    href="/feature-requests"
-                    className="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-800/50 transition group"
-                  >
-                    <div className="w-10 h-10 bg-yellow-500/20 rounded-lg flex items-center justify-center shrink-0">
-                      <Lightbulb className="w-5 h-5 text-yellow-400" />
-                    </div>
-                    <div className="flex-1">
-                      <h4 className="text-white font-semibold text-sm mb-1">Feature Requests</h4>
-                      <p className="text-gray-400 text-xs">Tell us what you want next.</p>
-                    </div>
-                  </Link>
-                  
-                  {/* Community */}
-                  <Link
-                    href="/community"
-                    className="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-800/50 transition group"
-                  >
-                    <div className="w-10 h-10 bg-cyan-500/20 rounded-lg flex items-center justify-center shrink-0">
-                      <Users className="w-5 h-5 text-cyan-400" />
-                    </div>
-                    <div className="flex-1">
-                      <h4 className="text-white font-semibold text-sm mb-1">Community</h4>
-                      <p className="text-gray-400 text-xs">Learn and share with fellow builders</p>
-                    </div>
-                  </Link>
-                  
                   {/* Help Center */}
                   <Link
                     href="/help-center"
@@ -218,20 +190,6 @@ export default function Navbar() {
                     <div className="flex-1">
                       <h4 className="text-white font-semibold text-sm mb-1">Office Hours</h4>
                       <p className="text-gray-400 text-xs">Live help from our team.</p>
-                    </div>
-                  </Link>
-                  
-                  {/* Report an Issue */}
-                  <Link
-                    href="/report-issue"
-                    className="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-800/50 transition group"
-                  >
-                    <div className="w-10 h-10 bg-red-500/20 rounded-lg flex items-center justify-center shrink-0">
-                      <MessageCircle className="w-5 h-5 text-red-400" />
-                    </div>
-                    <div className="flex-1">
-                      <h4 className="text-white font-semibold text-sm mb-1">Report an issue</h4>
-                      <p className="text-gray-400 text-xs">Found a bug? We're on it</p>
                     </div>
                   </Link>
                   </div>
